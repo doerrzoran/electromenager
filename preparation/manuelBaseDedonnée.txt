@@ -1,0 +1,41 @@
+
+créer une base de donnée
+
+tables:
+
+ _user:
+  -Id(Pk)
+  -user_ref(Fk)
+  -mail
+  -passeword
+   
+
+ _user_ref
+  -Id(Pk)
+  -status
+
+ _product
+ -Id(Pk)
+ -vendeur(Fk)
+ -type(Fk)
+ -libellé
+ -photo
+ -description
+ -prix
+
+_type
+ -Id(Pk)
+ -type
+
+_achat
+ -Id(Pk)
+ -vendeur(Fk)
+ -produit(Fk)
+ -acheteur(Fk)
+ -date		
+
+_commentaire
+ -Id(Pk)
+ -auteur(fK)
+ -text
+ -date

@@ -1,0 +1,19 @@
+Aplication de vente en ligne de produits electromenagés.
+
+_doit permettre a un utilisateur de se connecter ou de créer un compte:
+ -Le compte est créé grace à une adresse mail et un mot de passe à entrer deux fois.
+ -La connection est effectuée grace à au mot de passe et à l'adresse mail.
+
+
+_doit permettre à un simple visiteur de consulter les produits:
+ 
+
+_doit permetre aux utilisateurs de d'acheter des produits:
+
+_doit permetre aux utilisateurs de mettre en vente des produits
+
+
+
+_doit permettre à un administrateur de maintenir l'application:
+ -retirer des produits
+ -supprimer des comptes 
