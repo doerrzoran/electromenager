@@ -1,5 +1,5 @@
 <html>
     <body>
-        <div>electromenager</div>
+        <div>Electromenager</div>
     </body>
 </html>
