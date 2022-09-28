@@ -15,7 +15,7 @@ $dbpassword = $infobdd["Password"];
 echo $dbpassword." ";
 
 
-$conn = pg_connect("host=".$dbhost." dbname=".$dbname." user=".$dbuser." port=".$dbport." password=".$dbpassword.");
+$conn = pg_connect('host=".$dbhost." dbname=".$dbname." user=".$dbuser." port=".$dbport." password=".$dbpassword.');
 
 if(!$conn){
     die('Connection error: '). pg_connect_error();
