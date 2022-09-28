@@ -1,4 +1,5 @@
 <?php
+
 $infobdd = $_POST;
 
 var_dump($infobdd);
