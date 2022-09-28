@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS User_Ref(
   Label VARCHAR(250) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS User(
+CREATE TABLE IF NOT EXISTS User_acount(
   id serial PRIMARY KEY,
   name VARCHAR (250) NOT NULL,  
   firstname VARCHAR (250) NOT NULL,  
@@ -14,3 +14,37 @@ CREATE TABLE IF NOT EXISTS User(
   role INTEGER NOT NULL,
   FOREIGN KEY(role) REFERENCES User_Ref(id)
 );
+
+CREATE TABLE IF NOT EXISTS _product(
+  id serial PRIMARY KEY,
+  seller INTEGER NOT NULL,
+  type VARCHAR (250) NOT NULL,
+  Label VARCHAR (250) NOT NULL,
+  picture VARCHAR (250) NOT NULL,
+  description VARCHAR (250) NOT NULL,
+  price INTEGER NOT NULL,
+  FOREIGN KEY(seller) REFERENCES User_acount(id),
+  FOREIGN KEY(type) REFERENCES _type(id)
+);
+
+CREATE TABLE IF NOT EXISTS _type(
+  id serial PRIMARY KEY,
+  typelabel VARCHAR (250) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS _purchase(
+  id serial PRIMARY KEY,
+  product INTEGER NOT NULL,
+  buyer INTEGER NOT NULL,
+  date DATE NOT NULL,
+  FOREIGN KEY(product) REFERENCES _product(id),
+  FOREIGN KEY(buyer) REFERENCES User_acount(id)
+);
+
+CREATE TABLE IF NOT EXISTS _comment(
+  id serial PRIMARY KEY,
+  author INTEGER NOT NULL,
+  text VARCHAR (250) NOT NULL,
+  date DATE NOT NULL,
+  FOREIGN KEY(author) REFERENCES User_acount(id)
+)

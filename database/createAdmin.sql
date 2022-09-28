@@ -1,0 +1,1 @@
+INSERT INTO User_acount (name, firstname,  mail, password, role) VALUES ('Doerr', 'Zoran', 'doerrzoran@gmail.com', 'KalaElectro2', 1);
