@@ -4,7 +4,9 @@ $infobdd = $_POST;
 
 
 $dbhost = $infobdd["Host"];
+
 $dbname = $infobdd["Database"];
+echo $dbname;
 $dbuser = $infobdd["User"];
 $dbport = $infobdd["Port"];
 $dbpassword = $infobdd["Password"];
@@ -13,4 +15,6 @@ $conn = pg_connect("host=$dbhost dbname=$dbname user=$dbuser port=$dbport passwo
 
 if(!$conn){
     die('Connection error: '). pg_connect_error();
-  }
+}else{
+    echo 'connexion reussie !';
+}
