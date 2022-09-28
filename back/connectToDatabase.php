@@ -1,4 +1,6 @@
 <?php
-print_r($_POST);
+$infobdd = $_POST;
 
-$conn = pg_connect("host=$dbhost dbname=$dbname user=$dbuser port=$dbport password=$dbpassword")
+var_dump($infobdd);
+
+$conn = pg_connect("host=$dbhost dbname=$dbname user=$dbuser port=$dbport password=$dbpassword");
