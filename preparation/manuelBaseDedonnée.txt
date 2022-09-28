@@ -6,6 +6,8 @@ tables:
  _user:
   -Id(Pk)
   -user_ref(Fk)
+  -nom
+  -prenom
   -mail
   -passeword
    
