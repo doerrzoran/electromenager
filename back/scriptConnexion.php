@@ -2,6 +2,6 @@
 
 require_once "dbbFunctions.php";
 
-$user = selectFromDatabase("User", "id", 0, $conn);
+$user = selectFromDatabase("User", "name", "Doerr", $conn);
 
-echo $user["name"];
+var_dump($user);
