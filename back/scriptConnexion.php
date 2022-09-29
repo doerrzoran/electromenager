@@ -2,7 +2,7 @@
 
 require_once "dbbFunctions.php";
 
-$user = selectFromDatabase("User", "name", "Doerr", $conn);
+$user = selectFromDatabase("User_acount", "name", "Doerr", $conn);
 
 if($user = 1){
     echo 'oui';
