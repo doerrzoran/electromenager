@@ -2,6 +2,8 @@
 
 require_once "dbbFunctions.php";
 
-$user = selectFromDatabase("User", "'name'", "'Doerr'", $conn);
+$user = selectFromDatabase("User", "name", "Doerr", $conn);
 
-var_dump($user);
+if($user = 1){
+    echo 'oui';
+}
