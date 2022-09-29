@@ -2,8 +2,10 @@
 
 require_once "dbbFunctions.php";
 
-$user = selectFromDatabase("User_acount", "name", "Doerr", $conn);
+$users = selectFromDatabase("User_acount", "name", "Doerr", $conn);
 
 if($user = 1){
-    var_dump($user);
+    foreach($users as $user){
+        var_dump($user);
+    }
 }
