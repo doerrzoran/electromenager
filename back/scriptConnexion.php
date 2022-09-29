@@ -5,5 +5,5 @@ require_once "dbbFunctions.php";
 $user = selectFromDatabase("User_acount", "name", "Doerr", $conn);
 
 if($user = 1){
-    echo User_acount['firstname'];
+    echo $user['firstname'];
 }
