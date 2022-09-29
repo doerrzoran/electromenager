@@ -1,6 +1,6 @@
 <html>
     <body>
         <div>electromenager</div>
-        <a href="back\scriptConnexion.php">verification de compte</a>
+        <?php header("Location: pageAccueil.html") ?>
     </body>
 </html>
