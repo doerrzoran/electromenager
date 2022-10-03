@@ -2,7 +2,7 @@
 
 echo '2</br>';
 
-require_once '..\back\userId.php';
+require_once '../back/userId.php';
 
 echo '3</br>';
 
