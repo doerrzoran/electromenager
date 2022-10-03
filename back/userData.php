@@ -9,4 +9,4 @@ session_start();
         $_SESSION['password'] = $user['password'];
     } 
 
-header('Location: ../front/pageAceuil.php');    
+header('Location: ../front/pageAcceuil.php');    
