@@ -1,5 +1,10 @@
 <?php
+
+echo '2</br>';
+
 require_once '..\back\userId.php';
+
+echo '3</br>';
 
 function welcomeUser(){
     if(isset($userId)){
@@ -7,3 +12,4 @@ function welcomeUser(){
     }
 }
 
+echo '4</br>';
