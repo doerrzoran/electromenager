@@ -10,7 +10,7 @@ require_once "connectToDatabase.php";
   }
 
 
-  function insertintoDatabase($table, $key, $data, $conn){
+  function insertIntoDatabase($table, $key, $data, $conn){
     $query = "INSERT INTO $table ($key) VALUES ($data)";
     $result = pg_query($conn, $query);
     return $result;

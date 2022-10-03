@@ -2,12 +2,9 @@
     <body>
         <div>
             <?php
-            session_start();
-            
-            if(isset($_SESSION['id'])){
-                echo "connecté en temps que". $_SESSION['id'];
-            }
+            require_once "welcomeUser.php";
             ?>
+            <h3><?php welcomeUser() ?></h3>
         </div>
         <a href="creationDeCompte.html">creer un compte</a>
         <a href="connexion.html">se connecter</a>

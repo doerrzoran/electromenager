@@ -2,16 +2,20 @@
 
 require_once "dbbFunctions.php";
 
-$infoConnexion = $_POST
+if(isset($_POST)){
+
+$infoConnexion = $_POST;
 
 $mail = $infoConnexion['mail'];
 $password = $infoConnexion['password'];
 
+}else{
+  require 'scriptCreationDeCompte.php';
+}
+
+
 $users = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
 if($users = 1){
-    session_start();
-    foreach($users as $user){
-        $_SESSION['id'] = $user['id'];
-    }
+    require 'userData.php';
 }
