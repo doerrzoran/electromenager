@@ -1,4 +1,5 @@
 <?php
+echo '1</br>';
 
 session_start();
 
