@@ -14,14 +14,8 @@ $password = $infoConnexion['password'];
 }
 
 
-$users = selectFromDatabase("User_acount", "mail", $mail, $conn);
-echo $users[1];
+$user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-foreach($users as $user){
-  // print_r($user).'</br>';
-  echo $user;
-}
-
-if($users = 1){
+if($user = 1){
     require 'userData.php';
 }

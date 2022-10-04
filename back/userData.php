@@ -12,4 +12,4 @@ foreach($users as $user){
 
 
 
-// header('Location: ../front/pageAccueil.php');
+header('Location: ../front/pageAccueil.php');
