@@ -6,7 +6,7 @@
             ?>
             <h3><?php welcomeUser($userName, $userFirstname); 
             $test = 2;
-            if($test = 1){
+            if($test != 1){
                 echo $test;
             }else{
                 echo 'non';
