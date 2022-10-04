@@ -7,8 +7,10 @@ session_start();
         $_SESSION['firstname'] = $user['firstname'];
         $_SESSION['mail'] = $user['mail'];
         $_SESSION['password'] = $user['password'];
+
+        echo $_SESSION['name'];
     } 
 
-echo $_SESSION['name'];
+
 
 // header('Location: ../front/pageAccueil.php');
