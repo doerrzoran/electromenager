@@ -18,7 +18,7 @@ $users = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
 foreach($users as $user){
   var_dump($user);
-  echo $user[2];
+  echo $user[3];
 }
 
 if($users = 1){
