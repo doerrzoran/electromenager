@@ -10,3 +10,6 @@ if(isset($_SESSION['id'])){
     $userPassword = $_SESSION['password'];
     
 }
+
+
+echo $userName;
