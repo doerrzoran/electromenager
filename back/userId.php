@@ -13,4 +13,3 @@ if(isset($_SESSION['id'])){
 }
 
 
-echo $userName;

@@ -1,6 +1,8 @@
 <?php
 require_once '../back/userId.php';
 
-function welcomeUser(){
+echo $userName;
+
+function welcomeUser($userName, $userFirstname){
     echo "connecté en temps que ".$userName." ".$userFirstname;
 }
