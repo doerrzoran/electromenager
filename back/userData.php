@@ -9,6 +9,6 @@ session_start();
         $_SESSION['password'] = $user['password'];
     } 
 
-echo $user['name'];
+echo $_SESSION['name'];
 
 // header('Location: ../front/pageAccueil.php');
