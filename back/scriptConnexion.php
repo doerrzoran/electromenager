@@ -17,8 +17,4 @@ $password = $infoConnexion['password'];
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
 echo $user[1];
-
-if($user = 1){
-  echo $user[1];
-    require 'userData.php';
-}
+  require 'userData.php';
