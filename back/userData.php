@@ -1,5 +1,7 @@
 <?php
 
+echo 'hello';
+
 session_start();
     foreach($users as $user){
         $_SESSION['id'] = $user['id'];
@@ -9,4 +11,4 @@ session_start();
         $_SESSION['password'] = $user['password'];
     } 
 
-header('Location: ../front/pageAccueil.php');
+// header('Location: ../front/pageAccueil.php');
