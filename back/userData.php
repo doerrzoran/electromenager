@@ -1,14 +1,14 @@
 <?php
 
 session_start();
-foreach($users as $user){
-    echo $user['name'];
-    $_SESSION['id'] = $user['id'];
-    $_SESSION['name'] = $user['name'];
-    $_SESSION['firstname'] = $user['firstname'];
-    $_SESSION['mail'] = $user['mail'];
-    $_SESSION['password'] = $user['password'];
-} 
+
+echo $user['name'];
+$_SESSION['id'] = $user['id'];
+$_SESSION['name'] = $user['name'];
+$_SESSION['firstname'] = $user['firstname'];
+$_SESSION['mail'] = $user['mail'];
+$_SESSION['password'] = $user['password'];
+
 
 
 
