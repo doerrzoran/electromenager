@@ -9,5 +9,4 @@ session_start();
         $_SESSION['password'] = $user['password'];
     } 
 
-$_SESSION['test'] = 'test';
 header('Location: ../front/pageAccueil.php');
