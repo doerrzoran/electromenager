@@ -1,8 +1,8 @@
 <?php
-var_dump($users);
+
 session_start();
 foreach($users as $user){
-    var_dump($user);
+    echo $user['name'];
     $_SESSION['id'] = $user['id'];
     $_SESSION['name'] = $user['name'];
     $_SESSION['firstname'] = $user['firstname'];
