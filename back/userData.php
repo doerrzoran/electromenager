@@ -2,6 +2,8 @@
 
 session_start();
 
+echo $user[1];
+
 $_SESSION['id'] = $user[0];
 $_SESSION['name'] = $user[1];
 $_SESSION['firstname'] = $user[2];
