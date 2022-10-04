@@ -2,7 +2,7 @@
 
 session_start();
     foreach($users as $user){
-        echo $user;
+        var_dump($user);
         $_SESSION['id'] = $user['id'];
         $_SESSION['name'] = $user['name'];
         $_SESSION['firstname'] = $user['firstname'];
