@@ -5,6 +5,10 @@ require_once '../back/userId.php';
     echo "connecté en temps que ".$userName." ".$userFirstname;
   }
 
-  if(!$userId){?><h3><?php welcomeUser($userName, $userFirstname); ?></h3><?php}
+  if(isset($userId)){
+    ?><h3><?php welcomeUser($userName, $userFirstname); ?></h3><?php
+   }else{
+    '';
+   }
 
 
