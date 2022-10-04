@@ -16,10 +16,10 @@ $password = $infoConnexion['password'];
 
 $users = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-
-  echo $users['name'];
-
+foreach($users as $user){
+  var_dump($user);
+}
 
 if($users = 1){
-    // require 'userData.php';
+    require 'userData.php';
 }
