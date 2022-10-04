@@ -2,12 +2,11 @@
 
 session_start();
 
-echo $user['name'];
-$_SESSION['id'] = $user['id'];
-$_SESSION['name'] = $user['name'];
-$_SESSION['firstname'] = $user['firstname'];
-$_SESSION['mail'] = $user['mail'];
-$_SESSION['password'] = $user['password'];
+$_SESSION['id'] = $user[0];
+$_SESSION['name'] = $user[1];
+$_SESSION['firstname'] = $user[2];
+$_SESSION['mail'] = $user[3];
+$_SESSION['password'] = $user[4];
 
 
 
