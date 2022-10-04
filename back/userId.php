@@ -1,6 +1,5 @@
 <?php
 
-
 session_start();
 
 if(isset($_SESSION['id'])){
@@ -9,6 +8,7 @@ if(isset($_SESSION['id'])){
     $userFirstname = $_SESSION['firstname'];
     $userMail = $_SESSION['mail'];
     $userPassword = $_SESSION['password'];
-    $_SESSION['test'] = 'test';
+    
 }
 
+echo $_SESSION['test'];

@@ -3,8 +3,6 @@
         <div>
             <?php
             require_once "welcomeUser.php";
-            echo $_SESSION['test'];
-
             ?>
             <h3><?php welcomeUser(); ?></h3>
         </div>
