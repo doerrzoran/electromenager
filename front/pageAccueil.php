@@ -5,7 +5,7 @@
             require_once "welcomeUser.php";
             ?>
             <h3><?php welcomeUser($userName, $userFirstname); 
-            $test = '2';
+            $test = 2;
             if($test = 1){
                 echo $test;
             }else{
