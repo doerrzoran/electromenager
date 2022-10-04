@@ -6,7 +6,7 @@ require_once '../back/userId.php';
   }
 
   if(isset($userId)){
-    ?><h3><?php welcomeUser($userName, $userFirstname); ?></h3><?php
+    welcomeUser($userName, $userFirstname);
    }else{
     'test';
    }
