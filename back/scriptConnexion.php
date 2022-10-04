@@ -15,7 +15,8 @@ $password = $infoConnexion['password'];
 
 
 $users = selectFromDatabase("User_acount", "mail", $mail, $conn);
-
+echo $users;
+var_dump($users);
 foreach($users as $user){
   // print_r($user).'</br>';
   echo $user;
