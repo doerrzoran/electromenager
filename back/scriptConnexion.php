@@ -15,5 +15,8 @@ $password = $infoConnexion['password'];
 
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
-
-require 'userData.php';
+if($user != 1){
+  header('Location: ../front/pageAccueil.php'); 
+}else{
+  require 'userData.php';
+}
