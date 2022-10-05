@@ -28,7 +28,7 @@ try{
 }catch(Exception $e){
   ?><script>var test='<?php echo $e->getMessage(); ?>'; alert(test);</script> <?php
 }finally{
-  require 'userData.php';
+  // require 'userData.php';
 }
 
 
