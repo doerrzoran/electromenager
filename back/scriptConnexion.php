@@ -17,10 +17,10 @@ $password = $infoConnexion['password'];
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
 
-if($user != 1){
-  header('Location: ../front/connexion.html'); 
-}else{
+if($user == 1){
   require 'userData.php';
+}else{
+  header('Location: ../front/connexion.html'); 
 }
  
 
