@@ -31,6 +31,6 @@ try{
   alert(message);
   </script> <?php
 }finally{
-  // require 'userData.php';
+  require 'userData.php';
 }
 
