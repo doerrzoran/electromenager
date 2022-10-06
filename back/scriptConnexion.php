@@ -16,7 +16,7 @@ $password = $infoConnexion['password'];
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-if($a != 1){
+if($user != 1){
   ?><script>window.location.href = "../front/connexion.html";
   var message ='resulta introuvable !';
   alert(message);
