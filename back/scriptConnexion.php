@@ -16,21 +16,32 @@ $password = $infoConnexion['password'];
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-function checkResult($a){
-  if($a != 1){
-      throw new Exception('resulta introuvable !');
-  }else{
-    require 'userData.php';
-  }
-};
-
-
-try{
-  $user = checkResult($user);
-}catch(Exception $e){
+if($a != 1){
   ?><script>window.location.href = "../front/connexion.html";
-  var message ='<?php echo $e->getMessage(); ?>';
+  var message ='resulta introuvable !';
   alert(message);
   </script> <?php
+}else{
+  require 'userData.php';
 }
+
+
+// function checkResult($a){
+//   if($a != 1){
+//       throw new Exception('resulta introuvable !');
+//   };
+// };
+
+
+
+// try{
+//   $user = checkResult($user);
+// }catch(Exception $e){
+//   ?><script>window.location.href = "../front/connexion.html";
+//   var message ='<?php echo $e->getMessage(); ?>';
+//   alert(message);
+//   </script> <?php
+// }finally{
+  
+// }
 
