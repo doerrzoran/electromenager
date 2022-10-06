@@ -13,6 +13,7 @@ $password = $infoConnexion['password'];
   require 'scriptCreationDeCompte.php';
 }
 
+echo 'voila';
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
