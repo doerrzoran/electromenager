@@ -26,9 +26,7 @@ function checkResult($a){
 try{
   $user = checkResult($user);
 }catch(Exception $e){
-  ?><script>var message ='<?php echo $e->getMessage(); ?>';
-  alert(message);
-  window.location.href = "../front/connexion.html";</script> <?php
+  ?><script src = "..\Javascript\redirectConnexion.js"></script> <?php
 }finally{
   // require 'userData.php';
 }
