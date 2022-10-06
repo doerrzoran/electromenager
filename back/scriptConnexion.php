@@ -16,7 +16,9 @@ $password = $infoConnexion['password'];
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-var_dump($user);
+echo $user.' STOP ';
+var_dump($user)' STOP ';
+print_r($user)' STOP ';
 
 // if($user == 1){
 //   require 'userData.php';
