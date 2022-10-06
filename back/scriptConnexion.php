@@ -20,7 +20,7 @@ $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 if($user != 1){
   header('Location: ../front/connexion.html'); 
 }else{
-  // require 'userData.php';
+  require 'userData.php';
 }
  
 
