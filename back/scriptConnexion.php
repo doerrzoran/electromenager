@@ -28,7 +28,7 @@ try{
 }catch(Exception $e){
   ?><script>var message ='<?php echo $e->getMessage(); ?>';
   alert(message);
-  window.location.href = "..\front\connexion.html";</script> <?php
+  window.location.href = "../front/connexion.html";</script> <?php
 }finally{
   // require 'userData.php';
 }
