@@ -19,7 +19,9 @@ $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 function checkResult($a){
   if($a != 1){
       throw new Exception('resulta introuvable !');
-  };
+  }else{
+    require 'userData.php';
+  }
 };
 
 
@@ -30,10 +32,5 @@ try{
   var message ='<?php echo $e->getMessage(); ?>';
   alert(message);
   </script> <?php
-}catch{
-  require 'userData.php';
 }
-
-
-
 
