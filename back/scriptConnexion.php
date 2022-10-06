@@ -26,14 +26,8 @@ function checkResult($a){
 try{
   $user = checkResult($user);
 }catch(Exception $e){
-  ?><script>var test='<?php echo $e->getMessage(); ?>'; alert(test);</script> <?php
+  ?><script src = "..\Javascript\redirectConnexion.js"></script> <?php
 }finally{
-  // require 'userData.php';
+  require 'userData.php';
 }
-
-
-// if($user != 1){
-//   header('Location: ../front/pageAccueil.php'); 
-// }
-//   require 'userData.php';
 
