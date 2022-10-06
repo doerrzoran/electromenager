@@ -18,7 +18,7 @@ $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
 
 if($user != 1){
-  header('Location: ../front/pageAccueil.php'); 
+  header('Location: ../front/connexion.html'); 
 }
   require 'userData.php';
 
