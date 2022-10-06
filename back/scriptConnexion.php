@@ -28,6 +28,6 @@ try{
 }catch(Exception $e){
   ?><script src = "..\Javascript\redirectConnexion.js"></script> <?php
 }finally{
-  require 'userData.php';
+  // require 'userData.php';
 }
 
