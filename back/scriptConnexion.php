@@ -30,7 +30,8 @@ try{
   var message ='<?php echo $e->getMessage(); ?>';
   alert(message);
   </script> <?php
-}finally{
-  require 'userData.php';
 }
+
+require 'userData.php';
+
 
