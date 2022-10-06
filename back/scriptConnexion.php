@@ -26,22 +26,3 @@ if($a != 1){
 }
 
 
-// function checkResult($a){
-//   if($a != 1){
-//       throw new Exception('resulta introuvable !');
-//   };
-// };
-
-
-
-// try{
-//   $user = checkResult($user);
-// }catch(Exception $e){
-//   ?><script>window.location.href = "../front/connexion.html";
-//   var message ='<?php echo $e->getMessage(); ?>';
-//   alert(message);
-//   </script> <?php
-// }finally{
-  
-// }
-
