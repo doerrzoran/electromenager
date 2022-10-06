@@ -16,11 +16,13 @@ $password = $infoConnexion['password'];
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-echo $user.' ';
-var_dump($user).' ';
 
-// require 'userData.php';
-
+if($user == true){
+  require 'userData.php';
+}else{
+  header('Location: ../front/connexion.html'); 
+}
+ 
 
 
 
