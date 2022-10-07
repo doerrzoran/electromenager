@@ -3,10 +3,19 @@
     <body>
         <form id="contactForm" action="../back/scriptConnexion.php" method="POST" enctype="multipart/form-data">
             <label for="mail">adresse email</label>
-            <input type="text" name="mail">
+            <input type="text" name="mail" onblur="check(this.value)">
             <label for="password">mot de passe</label>
             <input type="text" name="password">
             <button type="submit" id="event">vous identifier</button>
         </form>
     </body>
+    <script>
+       function check(value)
+       {
+         if(value.trim()=="test")
+         {
+            document.getElementById('errorname').innerHTML="this is an invalid name";  
+         }    
+       } 
+    </script>
 </html>
