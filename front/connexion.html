@@ -3,7 +3,7 @@
     <body>
         <form id="contactForm" action="../back/scriptConnexion.php" method="POST" enctype="multipart/form-data">
             <label for="mail">adresse email</label>
-            <input type="text" name="mail" onblur="check()">
+            <input id="email" type="text" name="mail" onblur="check()">
             <label for="password">mot de passe</label>
             <input type="text" name="password">
             <button type="submit" id="event">vous identifier</button>
@@ -11,7 +11,7 @@
     </body>
     <script>
        function check(){
-  if(document.getElementById('firstname').value=="test"){
+  if(document.getElementById('email').value=="test"){
     document.getElementById('errorname').innerHTML ="this is an invalid name";
   }
 }
