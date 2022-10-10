@@ -21,7 +21,7 @@ var_dump($userMail);
 var_dump($userMPassword);
 
 
-if($userMail || $userMPassword == false){
+if($userMail || $userMPassword != false){
   require 'userData.php';
 }else{
   ?><script>var test='mail invalide'; 
