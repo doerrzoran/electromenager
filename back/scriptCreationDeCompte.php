@@ -11,12 +11,11 @@ if(isset($_POST)){
   $password = $infoConnexion['password'];
   $password2 = $infoConnexion['password2'];
 
-if($password != $password2){
-  die('le mot de passe ne correspond pas');
- 
-}else{
-   $acount = insertIntoDatabase('user-acount', 'name, firstname, mail, password, role', '$name, $firstName, $mail, $password, 2', $conn);
+if($password == $password2){
+  $acount = insertIntoDatabase('user-acount', 'name, firstname, mail, password, role', '$name, $firstName, $mail, $password, 2', $conn);
   var_dump($acount);
+}else{
+   die('le mot de passe ne correspond pas');
 }
 
 };
