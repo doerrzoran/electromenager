@@ -21,7 +21,7 @@ var_dump($userMail);
 var_dump($userMPassword);
 
 
-if($userMail || $userMPassword == false){
+if($userMail == false || $userMPassword == false){
   ?><script>var test='mail invalide'; 
   alert(test);
   window.location.href = "../front/connexion.html";
