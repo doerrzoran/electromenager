@@ -18,7 +18,7 @@ if($user == true){
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-if($user === true){
+if($user == true){
   require 'userData.php';
 }else{
   header('Location: ../front/connexion.html'); 
