@@ -22,7 +22,7 @@ if($user == true){
 }else{
   ?><script>var test='<?php echo $e->getMessage(); ?>'; 
   alert(test);
-  window.location.href = "../front/connexion.html";
+  // window.location.href = "../front/connexion.html";
   </script> <?php
 }
  
