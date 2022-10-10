@@ -14,7 +14,7 @@ $password = $infoConnexion['password'];
 }
 
 
-$user = selectFromDatabaseAnd("User_acount", "mail", "password", $mail, $password, $conn);
+$user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
 
 if($user == true){
