@@ -17,8 +17,8 @@ $password = $infoConnexion['password'];
 $userMail = selectFromDatabase("User_acount", "mail", $mail, $conn);
 $userMPassword = selectFromDatabase("User_acount", "password", $password, $conn);
 
-echo $userMail;
-echo $userMPassword;
+var_dump($userMail);
+var_dump($userMPassword);
 
 
 // if($userMail && $userMPassword == true){
