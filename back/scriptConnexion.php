@@ -15,10 +15,10 @@ $password = $infoConnexion['password'];
 
 
 $userMail = selectFromDatabase("User_acount", "mail", $mail, $conn);
-$userPassword = selectFromDatabase("User_acount", "password", $password, $conn);
+$userMPassword = selectFromDatabase("User_acount", "password", $password, $conn);
 
 
-if(($userMail == true) && ($userPassword == true)){
+if($userMail && $userMPassword == true){
   require 'userData.php';
 }else{
   ?><script>var test='mail invalide'; 
