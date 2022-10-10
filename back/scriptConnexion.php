@@ -21,13 +21,13 @@ var_dump($userMail);
 var_dump($userMPassword);
 
 
-if($userMail || $userMPassword != false){
-  require 'userData.php';
-}else{
+if($userMail || $userMPassword == false){
   ?><script>var test='mail invalide'; 
   alert(test);
   window.location.href = "../front/connexion.html";
   </script> <?php
+}else{
+  require 'userData.php';
 }
  
 
