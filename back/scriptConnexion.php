@@ -24,13 +24,5 @@ if($user == true){
   header('Location: ../front/connexion.html'); 
 }
 
-// if($user == true){
-//   require 'userData.php';
-// }else{
-//   ?><script>var test='<?php echo $e->getMessage(); ?>'; 
-//   alert(test);
-//   window.location.href = "../front/connexion.html";
-//   </script> <?php
-// }
 
  
