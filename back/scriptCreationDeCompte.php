@@ -9,7 +9,14 @@ if(isset($_POST)){
   $firstName = $infoNewAccount['prenom'];
   $mail = $infoConnexion['mail'];
   $password = $infoConnexion['password'];
+  $password2 = $infoConnexion['password2'];
 
-$acounts = insertIntoDatabase('user-acount', 'name, firstname, mail, password, role', '$name, $firstName, $mail, $password, 2', $conn);
+if($password != $password2){
+  die('le mot de passe ne correspond pas');
+ 
+}else{
+   $acount = insertIntoDatabase('user-acount', 'name, firstname, mail, password, role', '$name, $firstName, $mail, $password, 2', $conn);
+  var_dump($acount);
+}
 
 };
