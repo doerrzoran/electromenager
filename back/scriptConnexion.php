@@ -17,9 +17,6 @@ $password = $infoConnexion['password'];
 $userMail = selectFromDatabase("User_acount", "mail", $mail, $conn);
 $userMPassword = selectFromDatabase("User_acount", "password", $password, $conn);
 
-var_dump($userMail);
-var_dump($userMPassword);
-
 
 if($userMail == false || $userMPassword == false){
   ?><script>var test='identifiants invalides'; 
