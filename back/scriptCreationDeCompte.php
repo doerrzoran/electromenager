@@ -4,7 +4,7 @@ require_once 'dbbFunctions.php';
 if(isset($_POST)){
 
   $infoNewAccount = $_POST;
-  
+  var_dump($infoNewAccount);
   $name = $infoNewAccount['nom'];
   $firstName = $infoNewAccount['prenom'];
   $mail = $infoNewAccount['mail'];
