@@ -16,13 +16,18 @@ $password = $infoConnexion['password'];
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
-
-if($user == true){
-  require 'userData.php';
-}else{
-  header('Location: ../front/connexion.html'); 
-}
  
+function checkResult($a){
+  if($a == false){
+      throw new Exception('resulta introuvable !');
+  };
+};
 
 
-
+try{
+  $user = checkResult($user);
+}catch(Exception $e){
+  ?><script>var test='<?php echo $e->getMessage(); ?>'; alert(test);</script> <?php
+}finally{
+  require 'userData.php';
+}
