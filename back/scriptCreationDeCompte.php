@@ -4,12 +4,12 @@ require_once 'dbbFunctions.php';
 if(isset($_POST)){
 
   $infoNewAccount = $_POST;
-  var_dump($infoConnexion);
+  var_dump($infoNewAccount);
   $name = $infoNewAccount['nom'];
   $firstName = $infoNewAccount['prenom'];
-  $mail = $infoConnexion['mail'];
-  $password = $infoConnexion['password'];
-  $password2 = $infoConnexion['password2'];
+  $mail = $infoNewAccount['mail'];
+  $password = $infoNewAccount['password'];
+  $password2 = $infoNewAccount['password2'];
 
 if($password != $password2){
   die('le mot de passe ne correspond pas');
