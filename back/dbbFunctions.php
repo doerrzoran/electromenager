@@ -9,7 +9,7 @@ require_once "connectToDatabase.php";
     return $row;
   }
 
-  function selectFromDatabaseAnd($table, $key1, key2, $data1, $data2 $conn){
+  function selectFromDatabaseAnd($table, $key1, $key2, $data1, $data2 $conn){
     $query = "SELECT * FROM $table WHERE $key1 = '$data1' AND $key2 = '$data2";
     $result = pg_query($conn, $query);
     $row = pg_fetch_row($result);
