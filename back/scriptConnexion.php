@@ -27,7 +27,10 @@ function checkResult($a){
 try{
   $user = checkResult($user);
 }catch(Exception $e){
-  ?><script>var test='<?php echo $e->getMessage(); ?>'; alert(test);</script> <?php
+  ?><script>var test='<?php echo $e->getMessage(); ?>'; 
+  alert(test);
+  window.location.href = "../front/connexion.html";
+  </script> <?php
 }finally{
-  // require 'userData.php';
+  require 'userData.php';
 }
