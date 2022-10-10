@@ -9,28 +9,22 @@ $infoConnexion = $_POST;
 $mail = $infoConnexion['mail'];
 $password = $infoConnexion['password'];
 
+if($user == true){
+  require 'userData.php';
 }else{
-  require 'scriptCreationDeCompte.php';
+  header('Location: ../front/connexion.html'); 
 }
 
 
 $user = selectFromDatabase("User_acount", "mail", $mail, $conn);
 
- 
-function checkResult($a){
-  if($a == false){
-      throw new Exception('resulta introuvable !');
-  };
-};
-
-
-try{
-  $user = checkResult($user);
-}catch(Exception $e){
+if($user == true){
+  require 'userData.php';
+}else{
   ?><script>var test='<?php echo $e->getMessage(); ?>'; 
   alert(test);
   window.location.href = "../front/connexion.html";
   </script> <?php
 }
-  require 'userData.php';
 
+ 
