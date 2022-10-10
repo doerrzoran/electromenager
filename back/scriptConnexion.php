@@ -32,5 +32,5 @@ try{
   window.location.href = "../front/connexion.html";
   </script> <?php
 }finally{
-  require 'userData.php';
+  // require 'userData.php';
 }
