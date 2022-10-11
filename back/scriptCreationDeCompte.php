@@ -16,10 +16,11 @@ if(isset($_POST)){
     if($verification == false){
       $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
     }else{
-      ?><script>var messsage='un compte existe deja pour cet adresse mail !'; 
-    alert(messsage);
-    window.location.href = "../front/creationDeCompte.html";
-    </script> <?php
+    ?>
+    <script>var message ='un compte existe deja pour cet adresse mail !';</script>
+    <script src='../Javascript/redirectConnexion.js' ></script>
+    <script>window.location.href = "../front/creationDeCompte.html";</script>
+     <?php
     }; 
   }else{
       die('le mot de passe ne correspond pas');

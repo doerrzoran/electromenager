@@ -1,4 +1,10 @@
 <html>
+    <script>var data = sessionStorage.getItem('Alert');
+        if(data != null){
+            alert(data);
+            sessionStorage.removeItem('Alert');
+        }
+        </script>
     <body>
         <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data">
             <label for="nom">nom:</label>
