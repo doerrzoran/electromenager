@@ -4,7 +4,7 @@ require_once 'dbbFunctions.php';
 if(isset($_POST)){
 
   $infoNewAccount = $_POST;
-  var_dump($infoNewAccount);
+  // var_dump($infoNewAccount);
   $name = $infoNewAccount['nom'];
   $firstName = $infoNewAccount['prenom'];
   $mail = $infoNewAccount['mail'];
@@ -18,7 +18,7 @@ if(isset($_POST)){
     }else{
       ?><script>var messsage='un compte existe deja pour cet adresse mail !'; 
     alert(messsage);
-    window.location.href = "..\front\creationDeCompte.html";
+    window.location.href = "../front/creationDeCompte.html";
     </script> <?php
     }; 
   }else{
