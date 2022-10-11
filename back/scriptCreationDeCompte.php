@@ -23,7 +23,11 @@ if(isset($_POST)){
      <?php
     }; 
   }else{
-      die('le mot de passe ne correspond pas');
+      ?>
+    <script>var message ='les mots de passe ne correspond pas';</script>
+    <script src='../Javascript/redirectConnexion.js' ></script>
+    <script>window.location.href = "../front/creationDeCompte.html";</script>
+     <?php  
   };
 
 };
