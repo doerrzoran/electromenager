@@ -1,6 +1,9 @@
 <html>
     <script>var data = sessionStorage.getItem('Alert');
-    alert(data);</script>
+    if(data != null){
+        alert(data);
+    }
+    </script>
     <body>
         <form id="contactForm" action="../back/scriptConnexion.php" method="POST" enctype="multipart/form-data">
             <label for="mail">adresse email</label>
