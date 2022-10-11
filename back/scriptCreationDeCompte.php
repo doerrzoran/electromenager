@@ -11,10 +11,8 @@ if(isset($_POST)){
   $password = $infoNewAccount['password'];
   $password2 = $infoNewAccount['password2'];
 
-  $newUser = "$name, $firstName, $mail, $password, 2";
-
 if($password === $password2){
-  $acount = insertIntoDatabase("user-acount", 'name, firstname, mail, password, role',  $newUser, $conn);
+  $acount = insertIntoDatabase('user-acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
   var_dump($acount);
 }else{
     die('le mot de passe ne correspond pas');
