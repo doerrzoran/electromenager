@@ -11,11 +11,18 @@ if(isset($_POST)){
   $password = $infoNewAccount['password'];
   $password2 = $infoNewAccount['password2'];
 
-if($password === $password2){
-  $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
-  var_dump($acount);
-}else{
-    die('le mot de passe ne correspond pas');
-}
+  if($password === $password2){
+    $verification =  selectFromDatabase('User_acount', 'mail', $mail, $conn);
+    if($verification == false){
+      $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
+    }else{
+      ?><script>var messsage='un compte existe deja pour cet adresse mail !'; 
+    alert(messsage);
+    window.location.href = "..\front\creationDeCompte.html";
+    </script> <?php
+    }; 
+  }else{
+      die('le mot de passe ne correspond pas');
+  };
 
 };
