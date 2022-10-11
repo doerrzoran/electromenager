@@ -12,7 +12,7 @@ if(isset($_POST)){
   $password2 = $infoNewAccount['password2'];
 
   if($password === $password2){
-    $verification =  selectFromDatabase('User_acount', 'mail', $mail, $conn);
+    $verification = selectFromDatabase('User_acount', 'mail', $mail, $conn);
     if($verification == false){
       $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
     }else{
