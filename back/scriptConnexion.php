@@ -20,7 +20,7 @@ $userMPassword = selectFromDatabase("User_acount", "password", $password, $conn)
 
 if($userMail == false || $userMPassword == false){
   ?>
-  <script>var message='identifiants invalides';</script>
+  <script>var message ='identifiants invalides';</script>
   <script src='../Javascript/redirectConnexion.js' ></script>
   <script>window.location.href = "../front/connexion.html";</script>
    <?php
