@@ -9,7 +9,7 @@
     },
     connexion: function() {
         window.location.href = "../front/connexion.html"
-    }
+    },
     vente: function() {
         window.location.href = "../front/miseEnVente.php"
     }
