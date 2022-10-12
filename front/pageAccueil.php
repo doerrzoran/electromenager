@@ -7,6 +7,7 @@
             <h3><?php welcomeUser($userName, $userFirstname); ?></h3>
         </div>
         <a href="creationDeCompte.html">creer un compte</a>
-        <a href="connexion.html">se connecter</a>
+        <!-- <a href="connexion.html">se connecter</a> -->
+        <div id="event">se connecter</div>
     </body>
 </html>
