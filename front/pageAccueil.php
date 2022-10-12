@@ -9,6 +9,6 @@
         <a href="creationDeCompte.html">creer un compte</a>
         <!-- <a href="connexion.html">se connecter</a> -->
         <div id="event">se connecter</div>
-        <script src ="../Javascript/redirect.js" ></script>
+        <script src ="../Javascript/redirect.js"></script>
     </body>
 </html>
