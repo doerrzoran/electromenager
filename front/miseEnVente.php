@@ -9,7 +9,16 @@
 
     <form action="../back/dbbFunctions.php" methode="POST" enctype = "multipart/form-data">
         <label for="type">type:</label>
-        <input type="select" name="type">
+        <select name="Label" id="">
+            <option value="1">micro onde</option>
+            <option value="2">four</option>
+            <option value="3">mixeur</option>
+            <option value="4">petrin</option>
+            <option value="5">sorbetiere</option>
+            <option value="6">fer à repasser</option>
+            <option value="7">fouet</option>
+            <option value="7">aspirateur</option>
+        </select>
         <label for="Label">Label:</label>
         <input type="text" name="Label">
         <label for="picture">image du produit :</label>
