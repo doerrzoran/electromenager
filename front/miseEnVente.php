@@ -18,7 +18,7 @@
         <input type="text" name="description">
         <label for="price">prix:</label>
         <input type="number" name="price">
-        <button type="submit"></button>
+        <button type="submit">enregistrer</button>
     </form>
  </body>
 </html>
