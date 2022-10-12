@@ -8,8 +8,8 @@
         </div>
         <a href="creationDeCompte.html">creer un compte</a>
         <!-- <a href="connexion.html">se connecter</a> -->
-        <div id="event">se connecter</div>
-        <script> var event = 'event';</script>
+        <div class="event" id="creationDeCompte">creer un compte</div>
+        <div class="event" id="connexion">se connecter</div>
         <script src ="../Javascript/redirect.js"></script>
     </body>
 </html>
