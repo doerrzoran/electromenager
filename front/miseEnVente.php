@@ -8,16 +8,16 @@
     </script>
 
     <form action="../back/dbbFunctions.php" methode="POST" enctype = "multipart/form-data">
-        <label for="type"></label>
-        <input type="list" name="type">
-        <label for="Label"></label>
+        <label for="type">type:</label>
+        <input type="select" name="type">
+        <label for="Label">Label:</label>
         <input type="text" name="Label">
-        <label for="picture"></label>
-        <input type="picture" name="picture">
-        <label for="description"></label>
+        <label for="picture">image du produit :</label>
+        <input type="file" name="picture">
+        <label for="description">description :</label>
         <input type="text" name="description">
-        <label for="price"></label>
-        <input type="price" name="price">
+        <label for="price">prix:</label>
+        <input type="number" name="price">
         <button type="submit"></button>
     </form>
  </body>
