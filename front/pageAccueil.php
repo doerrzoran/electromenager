@@ -8,6 +8,7 @@
         </div>
         <div class="event" id="creationDeCompte">creer un compte</div>
         <div class="event" id="connexion">se connecter</div>
+        <div class="event" id="connexion">vendre</div>
         <script src ="../Javascript/redirect.js"></script>
     </body>
 </html>
