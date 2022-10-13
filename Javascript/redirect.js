@@ -14,6 +14,6 @@
         window.location.href = "../front/miseEnVente.php"
     },
     produits: function() {
-        window.location.href = "../front/miseEnVente.php"
+        window.location.href = "../front/listeProduits.php"
     }
   }
