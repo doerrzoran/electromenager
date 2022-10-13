@@ -4,4 +4,7 @@ require_once "dbbFunctions.php";
 
 $users = selectAllFromDatabase("user_acount", $conn);
 
-var_dump($users);
+foreach($users as $user){
+    var_dump($user).'</br>';
+}
+
