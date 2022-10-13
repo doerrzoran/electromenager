@@ -10,6 +10,7 @@
         <div class="event" id="connexion">se connecter</div>
         <div class="event" id="vente">vendre</div>
         <div class="event" id="produits">consulter les articles</div>
+        <div class="event" id="utilisateurs">consulter la liste des utilisateurs</div>
         <script src ="../Javascript/redirect.js"></script>
     </body>
 </html>
