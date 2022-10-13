@@ -9,7 +9,7 @@
 
     <form action="../back/dbbFunctions.php" methode="POST" enctype = "multipart/form-data">
         <label for="type">type:</label>
-        <select name="Label" id="">
+        <select name="type" id="">
             <option value="1">micro onde</option>
             <option value="2">four</option>
             <option value="3">mixeur</option>

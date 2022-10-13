@@ -9,6 +9,12 @@ require_once "connectToDatabase.php";
     return $row;
   }
 
+  function selectAllFromDatabase($table, $conn){
+    $query = "SELECT * FROM $table";
+    $result = pg_query($conn, $query);
+    $all = pg_fetch_all($result);
+    return $all;
+  }
   
 
   function insertIntoDatabase($table, $key, $data, $conn){ 
