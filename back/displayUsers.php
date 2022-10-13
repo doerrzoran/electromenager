@@ -5,9 +5,9 @@ require_once "dbbFunctions.php";
 $users = selectAllFromDatabase("user_acount", $conn);
 
 foreach($users as $user){
-    echo $user['name'].'</br>';
-    echo $user['firstname'].'</br>';
-    echo $user['mail'].'</br>';
+    echo $user['name'];
+    echo $user['firstname'];
+    echo $user['mail'];
     echo $user['password'].'</br>';
 }
 
