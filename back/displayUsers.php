@@ -11,7 +11,7 @@ foreach($users as $user){
 }
 ?>
 
-<script> var infoUsers = "<?php echo $users ?>";
+<script> var infoUsers = "<?php json_encode($users) ?>";
 document.writeln(infoUsers);</script>
 <script src = "../Javascript/redirectUsersInfo.js"></script>
 <!-- <script>window.location.href = "../front/listeUtilisateurs.php";</script> -->
