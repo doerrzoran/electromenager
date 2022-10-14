@@ -8,4 +8,4 @@ echo $users;
 
 <script> var infoUsers = "<?php echo $users ?>";
 document.writeln(infoUsers);</script>
-<script src = "../Javascript/redirectUsersInfo.js"></script>
+
