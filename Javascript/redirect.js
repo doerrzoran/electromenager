@@ -17,6 +17,6 @@
         window.location.href = "../front/listeProduits.php"
     },
     utilisateurs: function() {
-        window.location.href = "../back/displayUsers.php"
+        window.location.href = ""
     }
   }
