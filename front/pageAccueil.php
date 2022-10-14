@@ -1,5 +1,6 @@
 <html>
     <body>
+        <div>aaa</div>
         <div>
             <?php
             require_once "welcomeUser.php";
