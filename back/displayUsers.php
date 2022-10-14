@@ -11,15 +11,14 @@ foreach($users as $user){
 }
 ?>
 
-<script> var infoUsers = "<?php json_encode($users) ?>";
-document.writeln(infoUsers);</script>
+<script> var infoUsers = "<?php json_encode($users) ?>";</script>
 <script src = "../Javascript/redirectUsersInfo.js"></script>
 <!-- <script>window.location.href = "../front/listeUtilisateurs.php";</script> -->
 
 <script>var data = sessionStorage.getItem('userInfo');</script>
 
 <?php
-   $users = '<script>document.writeln(data);</script>';
+   $users = '<script>document.write(data);</script>';
    
 foreach($users as $user){
     print_r($user);
