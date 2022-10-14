@@ -3,9 +3,9 @@ document.writeln(data);</script>
 
 <?php
    $users = '<script>document.writeln(data);</script>';
-  var_dump($users);
+   print_r($users);
 foreach($users as $user){
-    var_dump($user);
+    print_r($user);
     echo $user['name'].'-';
     echo $user['firstname'].'-';
     echo $user['mail'].'-';
