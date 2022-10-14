@@ -3,7 +3,7 @@ document.writeln(data);</script>
 
 <?php
    $users = '<script>document.writeln(data);</script>';
-echo $users;
+  var_dump($users);
 foreach($users as $user){
     echo $user['name'].'-';
     echo $user['firstname'].'-';
@@ -11,4 +11,4 @@ foreach($users as $user){
     echo $user['password'].'-';
 }
 
-?> -->
+?> 
