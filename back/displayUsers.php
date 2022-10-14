@@ -9,4 +9,4 @@ echo $users;
 <script> var infoUsers = "<?php echo $users ?>";
 document.writeln(infoUsers);</script>
 <script src = "../Javascript/redirectUsersInfo.js"></script>
-<!-- <script>window.location.href = "../front/listeUtilisateurs.php";</script> -->
+<script>window.location.href = "../front/listeUtilisateurs.php";</script>
