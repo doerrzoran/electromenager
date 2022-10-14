@@ -15,8 +15,6 @@
     },
     produits: function() {
         window.location.href = "../front/listeProduits.php"
-    },
-    utilisateurs: function() {
-        window.location.href = ""
     }
+    
   }
