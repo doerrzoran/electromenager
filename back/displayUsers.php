@@ -3,11 +3,11 @@
 require_once "dbbFunctions.php";
 
 $users = selectAllFromDatabase("user_acount", $conn);
-
+$user = $users[1];
 ?>
 
 <script>
-var arr = <?php echo json_encode($users); ?>;
+var arr = <?php echo json_encode($user); ?>;
 </script>
 <script src="../Javascript/redirectUsersInfo.js"></script>
 <script> window.location.href = "../front/listeUtilisateurs.php" </script>
