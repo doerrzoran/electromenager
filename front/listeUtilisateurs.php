@@ -1,6 +1,7 @@
 <script>
 var data = sessionStorage.getItem('Cle');
 var newArr = JSON.parse(data);
+var arr = newArr[1];
 </script>
 
 
