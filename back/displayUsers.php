@@ -12,6 +12,7 @@ foreach($users as $user){
     <?php
 }
 
+?>
 
 <script src="../Javascript/redirectUsersInfo.js"></script>
 <script> window.location.href = "../front/listeUtilisateurs.php" </script>
