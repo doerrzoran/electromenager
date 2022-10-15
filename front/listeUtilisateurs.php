@@ -1,15 +1,11 @@
-<script>var data = sessionStorage.getItem('userInfo');
-document.writeln(data);</script>
+<script>
+var data = sessionStorage.getItem('Cle');
+var newArr = JSON.parse(data);
+</script>
 
-<?php
-   $users = '<script>document.writeln(data);</script>';
-   print_r($users);
-foreach($users as $user){
-    print_r($user);
-    echo $user['name'].'-';
-    echo $user['firstname'].'-';
-    echo $user['mail'].'-';
-    echo $user['password'].'-';
-}
+<?php 
+$key1 = "<script>document.write(newArr[0]);</script>";
+$key2 = "<script>document.write(newArr[1]);</script>";
 
-?> 
+
+echo $key1.':'.$key2;

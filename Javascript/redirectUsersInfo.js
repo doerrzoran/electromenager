@@ -1,4 +1,2 @@
-if(infoUsers){
-    sessionStorage.setItem('userInfo', infoUsers);
- }
- 
+var string = JSON.stringify(arr);
+sessionStorage.setItem('Cle', string);
