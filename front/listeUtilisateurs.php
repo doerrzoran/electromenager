@@ -2,7 +2,7 @@
 var data = sessionStorage.getItem('Cle');
 document.write(data);
 var newArr = JSON.parse(data);
-document.write(newArr);
+document.write(newArr['name']);
 </script>
 
 
