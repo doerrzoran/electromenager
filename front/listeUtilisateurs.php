@@ -4,6 +4,6 @@ var newArr = JSON.parse(data);
 </script>
 
 
-<?php $variable = "<script>document.write(data['name']);</script>";
+<?php $variable = "<script>document.write(newArr['name']);</script>";
 
 
