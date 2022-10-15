@@ -7,7 +7,7 @@ $users = selectAllFromDatabase("user_acount", $conn);
 foreach($users as $user){
     ?>
         <script>
-        var arr = <?php echo json_encode($users); ?>;
+        var arr = <?php echo json_encode($user); ?>;
         </script>
     <?php
 }
