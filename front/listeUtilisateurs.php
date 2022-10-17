@@ -2,7 +2,7 @@
 
 
 $form = '<form action="../back/deleteUser.php" method="POST" enctype="multipart/form-data">
-    <input id="input" type="hidden" name="input" value="Swag">
+    <input id="id" type="hidden" name="id" value="Swag">
     <button type ="submit">submit</button>
 </form>';
 
@@ -19,7 +19,7 @@ function tab(newArr){
     var arr = newArr[i];
     document.write(arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] +'\n' + form + '<br>');
     var id = arr['id']; 
-    document.getElementById("input").value = id;
+    document.getElementById("id").value = id;
   } 
 }
 
