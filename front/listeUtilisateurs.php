@@ -11,8 +11,14 @@ function tab(newArr){
     var arr = newArr[i];
     var id = arr['id']; 
     document.write(id + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] +'\n' + form + '<br>');
+    
   }
-  document.getElementById("id").value = id;
+  for(let i = 0; i < newArr.length; i++){
+    var arr = newArr[i];
+    var id = arr['id']; 
+    document.getElementById("id").value = id;
+  }
+  
 }
 </script>
 
