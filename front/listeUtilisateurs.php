@@ -5,6 +5,7 @@
 
 <script>
 function displayUser(arr){
+    var arr = newArr[i];
     document.write(arr['id'] + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] +'\n' + form + '<br>');
     var id = arr['id']; 
     document.getElementById("id").value = id;
@@ -13,8 +14,7 @@ var data = sessionStorage.getItem('Cle');
 var newArr = JSON.parse(data);
 function tab(newArr){
   for(let i = 0; i < newArr.length; i++){
-    var arr = newArr[i];
-    displayUser(arr);
+    displayUser();
   } 
 }
 
