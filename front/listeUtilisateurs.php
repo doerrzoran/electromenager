@@ -5,7 +5,7 @@ var arr = newArr[1];
 </script>
 
 
-<?php $variable = "<script>document.write(arr['name']);</script>";
+<?php $variable = "<script>document.write(newArr[1]['name']);</script>";
 
 echo $variable;
 
