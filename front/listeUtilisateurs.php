@@ -8,7 +8,7 @@ $form = '<form action="../back/deleteUser.php" method="POST" enctype="multipart/
 
 ?>
 
-<script>var form = "<?php echo $form ?>";</script>
+<script>var form = "<?php echo $form; ?>";</script>
 
 
 <script>
