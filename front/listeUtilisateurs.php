@@ -16,6 +16,8 @@ function tab(newArr){
     var arr = newArr[i];
     document.write( arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] + '<br>');
   }
+  var id = arr['id']; 
+  document.getElementById("input").value = id;
 }
 
 
