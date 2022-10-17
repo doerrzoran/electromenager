@@ -1,13 +1,19 @@
 <script>
 var data = sessionStorage.getItem('Cle');
 var newArr = JSON.parse(data);
-document.write(newArr.length);
+function tab(newArr){
+  for(let i = 0; i < newArr.length; i++){
+    var arr = newArr[i];
+    document.write(arr['name'])
+  }
+}
+
 var num = 2;
-var arr = newArr[1];
+
 </script>
 
 
-<?php $variable = "<script>document.write(newArr[num]['name']);</script>";
+<?php $variable = "<script>tab(newArr);</script>";
 
 echo $variable;
 
