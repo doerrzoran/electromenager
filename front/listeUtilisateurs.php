@@ -1,12 +1,6 @@
 
 
-<script>
-    function form(){
-        document.write('<form action="../back/deleteUser.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="id" value="Swag"><button type ="submit">submit</button></form>');
-        var id = arr['id'];
-        document.getElementById("id").value = id;
-    }
-</script>
+<script>var form = '<form action="../back/deleteUser.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="id" value="Swag"><button type ="submit">submit</button></form>';</script>
 
 
 <script>
@@ -15,10 +9,13 @@ var newArr = JSON.parse(data);
 function tab(newArr){
   for(let i = 0; i < newArr.length; i++){
     var arr = newArr[i];
-    document.write(id + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] +'\n' + form() + '<br>');
+    var id = arr['id']; 
+    document.write(id + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] +'\n' + form + '<br>');
+    document.getElementById("id").value = id;
   }
   
 }
+
 </script>
 
 
