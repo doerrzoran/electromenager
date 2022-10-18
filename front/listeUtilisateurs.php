@@ -10,7 +10,7 @@ function tab(newArr){
   for(let i = 0; i < newArr.length; i++){
     var arr = newArr[i];
     var id = arr['id']; 
-    var line = arr['id'] + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] + '\n' + form + '<br>'
+    document.write(arr['id'] + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] + '<br>');
   }
   
 }
@@ -20,7 +20,7 @@ function tab(newArr){
 </script>
 
 
-<?php $variable = "<script>document.write(newArr[0]['id']);</script>";
+<?php $variable = "<script>tab(newArr);</script>";
 
-echo $variable;
+echo $variable.'STOP';
 
