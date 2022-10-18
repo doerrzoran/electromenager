@@ -20,7 +20,7 @@ function tab(newArr){
 </script>
 
 
-<?php $variable = "<script>document.write(line);</script>";
+<?php $variable = "<script>document.write(newArr[0]);</script>";
 
 echo $variable;
 
