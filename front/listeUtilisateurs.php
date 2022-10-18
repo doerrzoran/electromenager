@@ -24,7 +24,7 @@ function tab(newArr){
 
 echo $variable.'STOP';
 
-$array = "<script>newArr;</script>";
+$array = "<script>document.write(newArr);</script>";
 
 echo $array[0]['name'];
 
