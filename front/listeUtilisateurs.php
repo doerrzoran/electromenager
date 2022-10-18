@@ -7,7 +7,12 @@
 var data = sessionStorage.getItem('Cle');
 var newArr = JSON.parse(data);
 function tab(newArr){
-  
+  for(let i = 0; i < newArr.length; i++){
+    var arr = newArr[i];
+    var id = arr['id']; 
+    var line = arr['id'] + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] + '\n' + form + '<br>'
+    document.write(line);
+  }
   
 }
 
@@ -16,7 +21,7 @@ function tab(newArr){
 </script>
 
 
-<?php $variable = "<script>document.write(newArr[0]['id'] + '\n' + newArr[0]['name'] + '\n' + newArr[0]['firstname'] + '\n' + newArr[0]['mail'] + '\n' + newArr[0]['password'] + '<br>')</script>";
+<?php $variable = "<script>tab(newArr);</script>";
 
 echo $variable;
 
