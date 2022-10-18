@@ -21,7 +21,7 @@ function tab(newArr){
 </script>
 
 
-<?php $variable = "<script>document.write(newArr);</script>";
+<?php $variable = "<script>document.write(newArr[0]);</script>";
 
 echo $variable;
 
