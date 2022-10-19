@@ -7,7 +7,8 @@ function welcomeUser($userName, $userFirstname){
   if(!$userName){
      echo '';
   }else{
-     echo "connecté en temps que ".$userName." ".$userFirstname;
+     echo "<h3>connecté en temps que ".$userName." ".$userFirstname."</h3>";
+     echo "<p>se deconnecter</p>";
   } 
 }
 
