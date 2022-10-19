@@ -6,7 +6,7 @@
         }
         </script>
     <body>
-        <div><?php require_once "header.html"; ?></div>
+        <?php require_once "header.html"; ?>
         <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data">
             <label for="nom">nom:</label>
             <input type="text" name="nom">
@@ -21,6 +21,6 @@
             <input type="submit"> </input>
         </form>
     </body>
-
+    <script src ="../Javascript/redirect.js"></script>
 
 </html>
