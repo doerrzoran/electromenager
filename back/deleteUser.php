@@ -6,4 +6,4 @@ $id = $_POST['id'];
 
 $deletion = deleteFromDatabase("user_acount", "id", $id, $conn);
 
-header("Location: ../backdisplayUsers.php");
+header("Location: displayUsers.php");
