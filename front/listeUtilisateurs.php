@@ -1,6 +1,6 @@
 
 
-<script>var form = '<form action="../back/deleteUser.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="id" value="<?php echo $id ?>"><button type ="submit">submit</button></form>';</script>
+
 
 
 <script>
@@ -11,6 +11,8 @@ function tab(newArr){
     var arr = newArr[i];
     var id = arr['id']; 
     document.write(arr['id'] + '\n' + arr['name'] + '\n' + arr['firstname'] + '\n' + arr['mail'] + '\n' + arr['password'] + '<br>');
+    var form = '<form action="../back/deleteUser.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="id" value="' + varr['id'] +  '"><button type ="submit">submit</button></form>';
+    document.write(form);
   }
   
 }
@@ -22,9 +24,6 @@ function tab(newArr){
 
 <?php $variable = "<script>tab(newArr);</script>";
 
-echo $variable.'STOP';
+echo $variable;
 
-$array = "<script>document.write(newArr);</script>";
-
-echo $array[0]['name'];
 
