@@ -1,5 +1,6 @@
 <html>
  <body>
+ <div><?php require_once "header.html"; ?></div>
     <script>var data = sessionStorage.getItem('Alert');
     if(data != null){
         alert(data);

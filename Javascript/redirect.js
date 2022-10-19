@@ -5,10 +5,10 @@
   }) 
   var obj = {
     creationDeCompte: function() {
-        window.location.href = "../front/creationDeCompte.html"
+        window.location.href = "../front/creationDeCompte.php"
     },
     connexion: function() {
-        window.location.href = "../front/connexion.html"
+        window.location.href = "../front/connexion.php"
     },
     vente: function() {
         window.location.href = "../front/miseEnVente.php"
@@ -18,5 +18,8 @@
     },
     utilisateurs: function() {
         window.location.href = "../back/displayUsers.php"
+    },
+    title: function() {
+        window.location.href = "../front/pageAccueil.php"
     }
   }

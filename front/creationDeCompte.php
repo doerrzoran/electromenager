@@ -6,6 +6,7 @@
         }
         </script>
     <body>
+        <div><?php require_once "header.html"; ?></div>
         <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data">
             <label for="nom">nom:</label>
             <input type="text" name="nom">

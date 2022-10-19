@@ -20,14 +20,14 @@ if(isset($_POST)){
     ?>
     <script>var message ='un compte existe deja pour cet adresse mail !';</script>
     <script src='../Javascript/redirectConnexion.js' ></script>
-    <script>window.location.href = "../front/creationDeCompte.html";</script>
+    <script>window.location.href = "../front/creationDeCompte.php";</script>
      <?php
     }; 
   }else{
       ?>
     <script>var message ='les mots de passe ne correspond pas';</script>
     <script src='../Javascript/redirectConnexion.js' ></script>
-    <script>window.location.href = "../front/creationDeCompte.html";</script>
+    <script>window.location.href = "../front/creationDeCompte.php";</script>
      <?php  
   };
 

@@ -22,7 +22,7 @@ if($userMail == false || $userMPassword == false){
   ?>
   <script>var message ='identifiants invalides';</script>
   <script src='../Javascript/redirectConnexion.js' ></script>
-  <script>window.location.href = "../front/connexion.html";</script>
+  <script>window.location.href = "../front/connexion.php";</script>
    <?php
 }else{
   require 'userData.php';
