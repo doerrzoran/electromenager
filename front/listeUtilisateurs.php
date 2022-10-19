@@ -13,7 +13,8 @@
       };
     }
     </script>
-    <?php require_once "header.html";  $variable = "<script>tab(newArr);</script>";
+    <?php require_once "header.html";  
+    $variable = "<script>tab(newArr);</script>";
     echo $variable;
     ?>
   </body>
