@@ -6,4 +6,4 @@ $id = $_POST['id'];
 
 $deletion = deleteFromDatabase("user_acount", "id", $id, $conn);
 
-var_dump($deletion);
+header("Location: front\listeUtilisateurs.php");
