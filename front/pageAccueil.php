@@ -3,6 +3,7 @@
         
         <div>
             <?php
+            require_once "header.html";
             require_once "welcomeUser.php";
             ?>
             <h3><?php welcomeUser($userName, $userFirstname); ?></h3>
