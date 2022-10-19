@@ -16,5 +16,5 @@
             <button type="submit" id="event">vous identifier</button>
         </form>
     </body>
-    
+    <script src ="../Javascript/redirect.js"></script>
 </html>

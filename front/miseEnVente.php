@@ -31,5 +31,6 @@
         <button type="submit">enregistrer</button>
     </form>
  </body>
+ <script src ="../Javascript/redirect.js"></script>
 </html>
 

@@ -10,3 +10,7 @@ function welcomeUser($userName, $userFirstname){
      echo "connecté en temps que ".$userName." ".$userFirstname;
   } 
 }
+
+?>
+
+<script src ="../Javascript/redirect.js"></script>
