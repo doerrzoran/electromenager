@@ -15,7 +15,7 @@
         <div class="event" id="utilisateurs">consulter la liste des utilisateurs</div>
         <script>
             var role = sessionStorage.getItem('Role');
-            if(typeof role == "undefined"){
+            if(role == null){
               document.getElementsByName("connecteur").style.display = "none";
             }
         </script>
