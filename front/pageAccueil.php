@@ -15,7 +15,7 @@
         <div class="event" id="utilisateurs">consulter la liste des utilisateurs</div>
         <script>
             var role = sessionStorage.getItem('Role');
-            if(typeof role == 'undefined'){
+            if(typeof role !== 'undefined'){
               document.getElementById("creationDeCompte").style.display = "none";
               document.getElementById("connexion").style.display = "none";
             }
