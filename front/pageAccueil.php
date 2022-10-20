@@ -16,7 +16,7 @@
         <script>
             var role = sessionStorage.getItem('Role');
             console.log(role);
-            if(role == 1){
+            if(role > 0){
               document.getElementById("creationDeCompte").style.display = "none";
               document.getElementById("connexion").style.display = "none";
             }else{
