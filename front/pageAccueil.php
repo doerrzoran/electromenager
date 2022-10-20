@@ -17,10 +17,10 @@
             var role = sessionStorage.getItem('Role');
             console.log(role);
             if(typeof role !== 'undefined'){
-              
-            }else{
-                document.getElementById("creationDeCompte").style.display = "none";
+              document.getElementById("creationDeCompte").style.display = "none";
                 document.getElementById("connexion").style.display = "none";
+            }else{
+                
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
