@@ -6,9 +6,10 @@ echo $username;
 function welcomeUser($userName, $userFirstname){
   if(!$userName){
      echo '';
+     ?><script>sessionStorage.removeItem('Role');</script><?php
   }else{
      echo "<h3>connecté en temps que ".$userName." ".$userFirstname."</h3>";
-     echo "<p>se deconnecter</p>";
+     echo "<p id='deconnexion'>se deconnecter</p>";
   } 
 }
 
