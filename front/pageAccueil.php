@@ -8,15 +8,15 @@
             ?>
             <?php welcomeUser($userName, $userFirstname); ?>
         </div>
-        <div class="event connecteur" id="creationDeCompte">creer un compte</div>
-        <div class="event connecteur" id="connexion">se connecter</div>
+        <div class="event" class= "connecteur" id="creationDeCompte">creer un compte</div>
+        <div class="event" class= "connecteur" id="connexion">se connecter</div>
         <div class="event" id="vente">vendre</div>
         <div class="event" id="produits">consulter les articles</div>
         <div class="event" id="utilisateurs">consulter la liste des utilisateurs</div>
         <script>
             var role = sessionStorage.getItem('Role');
             if(typeof role !== 'undefined'){
-              document.getElementsByClassName("connecteur").style.display = "none";
+              document.getElementsByClassName(""class= "connecteur").style.display = "none";
 
             }
         </script>
