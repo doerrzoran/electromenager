@@ -17,6 +17,7 @@
             var role = sessionStorage.getItem('Role');
             if(typeof role !== 'undefined'){
               document.getElementsByName("connecteur").display = "none";
+              
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
