@@ -15,7 +15,7 @@
         <div class="event" id="utilisateurs">consulter la liste des utilisateurs</div>
         <script>
             var role = sessionStorage.getItem('Role');
-            if(isset(() => role)){
+            if(typeof role !== 'undefined'){
               console.log('test');
             }
         </script>
