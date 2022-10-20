@@ -16,9 +16,11 @@
         <script>
             var role = sessionStorage.getItem('Role');
             console.log(role);
-            if(typeof role !== 'null'){
-              document.getElementById("creationDeCompte").style.display = "none";
-              document.getElementById("connexion").style.display = "none";
+            if(typeof role == 'null'){
+              
+            }else{
+                document.getElementById("creationDeCompte").style.display = "none";
+                document.getElementById("connexion").style.display = "none";
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
