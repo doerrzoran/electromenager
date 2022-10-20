@@ -21,6 +21,7 @@ if(isset($_POST)){
          var password = "<?php echo $password ?>";
          sessionStorage.setItem('mail');
          sessionStorage.setItem('password');
+         window.location.href = "../back/scriptConnexion.php";
         </script>
       <?php
     }else{
