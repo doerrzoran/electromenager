@@ -15,7 +15,14 @@ if(isset($_POST)){
     $verification = selectFromDatabase('User_acount', 'mail', $mail, $conn);
     if($verification == false){
       $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
-      header("Location: ../back/scriptConnexion.php");
+      ?> 
+        <script>
+         var mail = "<?php echo $mail ?>"; 
+         var password = "<?php echo $password ?>";
+         sessionStorage.setItem('mail');
+         sessionStorage.setItem('password');
+        </script>
+      <?php
     }else{
     ?>
     <script>var message ='un compte existe deja pour cet adresse mail !';</script>

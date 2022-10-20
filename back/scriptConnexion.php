@@ -10,7 +10,16 @@ $mail = $infoConnexion['mail'];
 $password = $infoConnexion['password'];
 
 }else{
-  require 'scriptCreationDeCompte.php';
+  ?>
+  <script>
+    var mail = sessionStorage.getItem('mail');
+    var password = sessionStorage.getItem('password');
+    sessionStorage.removeItem('mail');
+    sessionStorage.removeItem('password');
+  </script>
+  <?php
+  $mail = "<script>document.write(mail)</script>";
+  $password = "<script>document.write(password)</script>" ;
 }
 
 
