@@ -16,9 +16,9 @@
         <script>
             var role = sessionStorage.getItem('Role');
             console.log(role);
-            if(typeof role !== 'undefined'){
+            if(role !== 'null'){
               document.getElementById("creationDeCompte").style.display = "none";
-                document.getElementById("connexion").style.display = "none";
+              document.getElementById("connexion").style.display = "none";
             }else{
                 
             }
