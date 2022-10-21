@@ -17,8 +17,8 @@ $password = $infoConnexion['password'];
     console.log(mail);
     document.cookie = 'mail = ' + mail;
     document.cookie = 'password = ' + password;
-    sessionStorage.removeItem('mail');
-    sessionStorage.removeItem('password');
+    // sessionStorage.removeItem('mail');
+    // sessionStorage.removeItem('password');
   </script>
   <?php
   $mail = $_COOKIE['mail'];
