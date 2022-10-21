@@ -2,7 +2,7 @@
 
 require_once "dbbFunctions.php";
 
-if(isset($_POST)){
+if(isset($_POST['mail'])){
 
 $infoConnexion = $_POST;
 
