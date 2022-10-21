@@ -13,7 +13,7 @@ function welcomeUser($userName, $userFirstname){
      ?>
          <script>
             var disconnect = document.getElementById('deconnexion').onclick = function(){
-               window.location.href = "../back/sessionDestroy.php";
+               document.write("<?php session_destroy() ?>");
             }
          </script>
      <?php
