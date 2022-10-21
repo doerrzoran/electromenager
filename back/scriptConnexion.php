@@ -10,6 +10,7 @@ $mail = $infoConnexion['mail'];
 $password = $infoConnexion['password'];
 
 }else{
+  echo 'test';
   ?>
   <script>
     var mail = sessionStorage.getItem('mail');
