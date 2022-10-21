@@ -10,6 +10,13 @@ function welcomeUser($userName, $userFirstname){
   }else{
      echo "<h3>connecté en temps que ".$userName." ".$userFirstname."</h3>";
      echo "<p id='deconnexion'>se deconnecter</p>";
+     ?>
+         <script>
+            var disconnect = document.getElementById('deconnexion').onclick = function(){
+               windows.location.href = "../back/sessionDestroy.php";
+            }
+         </script>
+     <?php
   } 
 }
 
