@@ -18,8 +18,9 @@
             if(role > 0){
               document.getElementById("creationDeCompte").style.display = "none";
               document.getElementById("connexion").style.display = "none";
-            }else{
-                
+              if(role != 1){
+                document.getElementById("utilisateurs").style.display = "none";
+              }
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
