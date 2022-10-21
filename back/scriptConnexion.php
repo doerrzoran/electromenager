@@ -14,7 +14,7 @@ $password = $infoConnexion['password'];
   <script>
     var mail = sessionStorage.getItem('mail');
     var password = sessionStorage.getItem('password');
-    document.write(mail);
+    console.log(mail);
     document.cookie = 'mail = ' + mail;
     document.cookie = 'password = ' + password;
     sessionStorage.removeItem('mail');
