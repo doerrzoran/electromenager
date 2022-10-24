@@ -12,7 +12,7 @@
             <label for="mail">adresse email</label>
             <input id="email" type="text" name="mail" pattern=".+@g+.com" required>
             <label for="password">mot de passe</label>
-            <input type="password" name="password" required>
+            <input type="password" name="password" minlength="5" maxlength="10" required>
             <button type="submit" id="event">vous identifier</button>
         </form>
     </body>
