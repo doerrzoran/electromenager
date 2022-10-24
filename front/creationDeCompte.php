@@ -15,9 +15,9 @@
             <label for="mail">addresse mail</label>
             <input type="email" name="mail" pattern=".+@g+.com" required>
             <label for="Password">mot de passe</label>
-            <input type="password" name="password" required>
+            <input type="password" name="password" minlength="5" maxlength="10" required >
             <label for="password2">confirmer le mot de pase</label>
-            <input type="password" name="password2" required>
+            <input type="password" name="password2" minlength="5" maxlength="10" required>
             <input type="submit"> </input>
         </form>
     </body>
