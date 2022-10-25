@@ -8,7 +8,7 @@
     }
     </script>
 
-    <form action="../back/dbbFunctions.php" methode="POST" enctype = "multipart/form-data">
+    <form action="../back/scriptProduct.php" methode="POST" enctype = "multipart/form-data">
         <label for="type">type:</label>
         <select name="type" id="">
             <option value="1">micro onde</option>
@@ -21,13 +21,13 @@
             <option value="7">aspirateur</option>
         </select>
         <label for="Label">Label:</label>
-        <input type="text" name="Label">
+        <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
-        <input type="file" name="picture">
+        <input type="file" name="picture" required>
         <label for="description">description :</label>
-        <input type="text" name="description">
+        <input type="text" style="width: 150px;" name="description" required>
         <label for="price">prix:</label>
-        <input type="number" name="price">
+        <input type="number" name="price" required>
         <button type="submit">enregistrer</button>
     </form>
  </body>
