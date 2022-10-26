@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 require_once "dbbFunction.php";
 echo 'test</br>';
