@@ -9,7 +9,7 @@
     }
     </script>
 
-    <form action="../back/scriptProduct.php" methode="POST" enctype = "multipart/form-data">
+    <form action="../back/scriptProduct.php" method="POST" enctype = "multipart/form-data">
         <label for="type">type:</label>
         <select name="type" id="">
             <option value="1">micro onde</option>
