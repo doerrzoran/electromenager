@@ -1,6 +1,9 @@
 <html>
  <body>
- <div><?php require_once "header.html"; ?></div>
+ <div><?php 
+ require_once "header.html";
+ require_once ".../back/userId.php" 
+ ?></div>
     <script>var data = sessionStorage.getItem('Alert');
     if(data != null){
         alert(data);
@@ -20,6 +23,7 @@
             <option value="7">fouet</option>
             <option value="7">aspirateur</option>
         </select>
+        <input type="hidden" name="user" value="<?php echo $userID ?>">
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
