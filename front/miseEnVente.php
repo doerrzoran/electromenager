@@ -19,7 +19,7 @@
             <option value="5">sorbetiere</option>
             <option value="6">fer à repasser</option>
             <option value="7">fouet</option>
-            <option value="7">aspirateur</option>
+            <option value="8">aspirateur</option>
         </select>
         <input type="hidden" name="user" value="<?php echo $userID ?>">
         <label for="Label">Label:</label>
