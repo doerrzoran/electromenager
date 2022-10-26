@@ -1,9 +1,7 @@
 <html>
  <body>
- <div><?php 
- require_once "header.html";
- require_once ".../back/userId.php";
- ?></div>
+ <div><?php require_once "header.html"; ?></div>
+ <?php  require_once ".../back/userId.php"; ?>
     <script>var data = sessionStorage.getItem('Alert');
     if(data != null){
         alert(data);
