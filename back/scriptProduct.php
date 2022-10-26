@@ -1,6 +1,8 @@
 <?php
 require_once "dbbFunction.php";
 
+var_dump($_POST);
+
 if($_POST){
     $infoProduct = $_POST;
     $productType = $infoProduct["type"]
@@ -11,6 +13,6 @@ if($_POST){
 
 
     
-    $product = insertIntoDatabase("_product", "type, Label, picture, description, price", "'$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
+    // $product = insertIntoDatabase("_product", "type, Label, picture, description, price", "'$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
 
 }
