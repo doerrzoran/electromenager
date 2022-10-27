@@ -11,7 +11,7 @@ $productPicture = $_POST["picture"];
 $productDescription = $_POST["description"];
 $productPrice = $_POST["price"];
 
-echo $productPicture;
+var_dump($productPicture);
 
 
     
