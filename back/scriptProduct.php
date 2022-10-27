@@ -4,6 +4,7 @@ require_once 'dbbFunctions.php';
 echo 'test</br>';
 var_dump($_POST);
 
+$productSeller = $_POST["seller"];
 $productType = $_POST["type"];
 $productLabel = $_POST["Label"];
 $productPicture = $_POST["picture"];
@@ -12,7 +13,7 @@ $productPrice = $_POST["price"];
 
 
     
-   $product = insertIntoDatabase("_product", "type, Label, picture, description, price", "'$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
+$product = insertIntoDatabase("_product", "seller, type, Label, picture, description, price", "'$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
 
-   echo $product;
+var_dump($product);
 
