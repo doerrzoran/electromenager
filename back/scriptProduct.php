@@ -1,8 +1,8 @@
 
 <?php
 require_once 'dbbFunctions.php';
-echo 'test</br>';
 var_dump($_POST);
+
 
 $productSeller = $_POST["seller"];
 $productType = $_POST["type"];
@@ -11,9 +11,12 @@ $productPicture = $_POST["picture"];
 $productDescription = $_POST["description"];
 $productPrice = $_POST["price"];
 
+echo $productPicture;
+
 
     
 $product = insertIntoDatabase("_product", "seller, type, Label, picture, description, price", "'$productSeller', '$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
+        //    insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
 
 if($product != NULL){
     echo '2';
