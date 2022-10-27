@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <p>hello</p>
 <?php
 require_once "dbbFunction.php";
 echo 'test</br>';
