@@ -4,16 +4,13 @@ require_once 'dbbFunctions.php';
 echo 'test</br>';
 var_dump($_POST);
 
-if(isset($_POST)){
-    $infoProduct = $_POST;
-    $productType = $infoProduct["type"]
-    $productLabel = $infoProduct["Label"]
-    $productPicture = $infoProduct["picture"]
-    $productDescription = $infoProduct["description"]
-    $productPrice = $infoProduct["price"]
+    $productType = $_POST["type"]
+    $productLabel = $_POST["Label"]
+    $productPicture = $_POST["picture"]
+    $productDescription = $_POST["description"]
+    $productPrice = $_POST["price"]
 
 
     
     // $product = insertIntoDatabase("_product", "type, Label, picture, description, price", "'$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
 
-}
