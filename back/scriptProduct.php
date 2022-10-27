@@ -15,5 +15,6 @@ $productPrice = $_POST["price"];
     
 $product = insertIntoDatabase("_product", "seller, type, Label, picture, description, price", "'$productSeller', '$productType', '$productLabel', '$productPicture', '$productDescription', '$productPrice'", $conn);
 
+echo 'test</br>';
 print_r($product);
 
