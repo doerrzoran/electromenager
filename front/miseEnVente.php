@@ -25,9 +25,9 @@
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
-        <input type="file" name="picture" accept="image/png, image/jpeg" required>
+        <input type="file" id="image" name="image" accept="image/png, image/jpeg" required>
         <label for="description">description :</label>
-        <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description </textarea>
+        <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
         <input type="number" name="price" required>
         <button type="submit">enregistrer</button>
