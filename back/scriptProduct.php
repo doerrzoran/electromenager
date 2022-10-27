@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once "dbbFunction.php";
+require_once 'dbbFunctions.php';
 echo 'test</br>';
 // var_dump($_POST);
 
