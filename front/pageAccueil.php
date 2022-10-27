@@ -1,6 +1,6 @@
 <html>
     <body>
-        
+        <a href="../back/scriptCreationDeCompte.php">cliquer</a>
         <div>
             <?php
             require_once "header.html";
