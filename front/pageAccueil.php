@@ -1,6 +1,5 @@
 <html>
     <body>
-        <a href="../back/scriptProduct.php">cliquer</a>
         <div>
             <?php
             require_once "header.html";
