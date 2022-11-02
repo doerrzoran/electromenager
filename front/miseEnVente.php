@@ -43,7 +43,7 @@
 </html>
 
 <script>
-    var click = document.getElementById("click").click = function click(){
+    var click = document.getElementById("click").onclick = function click(){
        var url = document.getElementById("image").value;
        console.log(url);
     }
