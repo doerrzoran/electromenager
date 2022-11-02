@@ -3,6 +3,8 @@
 // require_once 'dbbFunctions.php';
 var_dump($_POST);
 
+echo $_POST["image"];
+
 
 
 $productSeller = $_POST["seller"];
@@ -11,13 +13,6 @@ $productLabel = $_POST["Label"];
 $productDescription = $_POST["description"];
 $productPrice = $_POST["price"];
 
-$target_dir = "../images/";
-$target_file = $target_dir . basename($_FILES["image"]["name"]);
-if(move_uploaded_file($_FILES["image"]["name"], $target_file)){
-    echo 'upload reussi !';
-}else{
-    echo 'echec';
-}
 
 
 
