@@ -41,12 +41,6 @@
         <button type="submit">enregistrer</button>
     </form>
 
-    <input type="hidden" id="image" class="simple-file-upload">
-    <script>
-           var url = document.getElementById("image").value;
-           
-    </script>
-    
  </body>
  <script src ="../Javascript/redirect.js"></script>
 </html>
