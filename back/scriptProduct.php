@@ -13,7 +13,7 @@ $productPrice = $_POST["price"];
 
 $target_dir = "../images/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
-if(move_uploaded_file($_FILES["image"], $target_file)){
+if(move_uploaded_file($_FILES["image"]["name"], $target_file)){
     echo 'upload reussi !';
 }else{
     echo 'echec';
