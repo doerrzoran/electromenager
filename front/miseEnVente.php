@@ -1,4 +1,7 @@
 <html>
+<head>
+    <script src="https://app.simplefileupload.com/buckets/b8bc1f8a3fed9fd752a08588100a7e0b.js"></script>
+</head>
  <body>
  <div><?php require_once "header.html"; ?></div>
  <?php require_once '../back/userId.php'; ?>
@@ -25,8 +28,7 @@
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
-        <input type="file" id="image" name="image" required>
-        <label for="description">description :</label>
+        <input type="hidden" name="images" id="images" class="simple-file-upload">        <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
         <input type="number" name="price" required>
