@@ -37,12 +37,16 @@
         <input type="number" name="price" required>
         <button type="submit">enregistrer</button>
     </form>
+    <p id= "click">cliquer</p>
  </body>
  <script src ="../Javascript/redirect.js"></script>
 </html>
 
 <script>
-    var url = document.getElementById("image").value;
-    console.log(url);
+    var click = document.getElementById("click").click = function click(){
+       var url = document.getElementById("image").value;
+       console.log(url);
+    }
+    
 </script>
 
