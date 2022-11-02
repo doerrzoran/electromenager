@@ -12,6 +12,11 @@
     }
     </script>
 
+    <input type="hidden" id="image" class="simple-file-upload">
+    <script>
+         var url = document.getElementById("image").value;  
+    </script>
+
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
         <select name="type">
@@ -28,6 +33,7 @@
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
+        <input type="hidden" name="image" value="<script>document.write(url)</script>">
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
@@ -35,11 +41,12 @@
         <button type="submit">enregistrer</button>
     </form>
 
-    <input type="hidden" name="image" id="image" class="simple-file-upload">
+    <input type="hidden" id="image" class="simple-file-upload">
     <script>
            var url = document.getElementById("image").value;
-           document.write(url);
+           
     </script>
+    
  </body>
  <script src ="../Javascript/redirect.js"></script>
 </html>
