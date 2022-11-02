@@ -39,3 +39,8 @@
  <script src ="../Javascript/redirect.js"></script>
 </html>
 
+<script>
+    var url = document.getElementById("image").value;
+    console.log(url);
+</script>
+
