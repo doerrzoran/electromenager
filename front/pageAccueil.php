@@ -23,5 +23,6 @@
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
+        <img src="the-returned-url"/>
     </body>
 </html>
