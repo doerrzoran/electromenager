@@ -1,7 +1,7 @@
 
 <?php
 // require_once 'dbbFunctions.php';
-var_dump($_POST);
+// var_dump($_POST);
 var_dump($_FILES);
 
 
@@ -13,7 +13,7 @@ $productPrice = $_POST["price"];
 
 $target_dir = "../images/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
-if(move_uploaded_file("C:\Users\doerr\AppData\Local\Temp\php9480.tmp", $target_file)){
+if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)){
     echo 'upload reussi !';
 }else{
     echo 'echec';
