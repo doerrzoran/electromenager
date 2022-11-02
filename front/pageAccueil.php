@@ -27,6 +27,6 @@
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
-        <img src="https://cdn-g8hn2yqg.files-simplefileupload.com/static/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBKzR6QVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--86595ffb1a833302f72e63ef50ca2387b75109ce/photoAspirateur.jpg"/>
+        <img src="h86595ffb1a833302f72e63ef50ca2387b75109ce/photoAspirateur.jpg"/>
     </body>
 </html>
