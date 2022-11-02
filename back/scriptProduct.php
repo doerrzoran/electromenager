@@ -1,8 +1,8 @@
 
 <?php
 // require_once 'dbbFunctions.php';
-// var_dump($_POST);
-var_dump($_FILES);
+var_dump($_POST);
+
 
 
 $productSeller = $_POST["seller"];
