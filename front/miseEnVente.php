@@ -38,10 +38,8 @@
     <input type="hidden" name="image" id="image" class="simple-file-upload">
     <script>
            var url = document.getElementById("image").value;
-           console.log(url);
+           document.write(url);
     </script>
-
-    <p id= "click">cliquer</p>
  </body>
  <script src ="../Javascript/redirect.js"></script>
 </html>
