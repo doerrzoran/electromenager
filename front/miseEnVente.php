@@ -28,7 +28,7 @@
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
-        <input type="hidden" name="image" id="image" class="simple-file-upload" value="C:\MAMP\htdocs\electromenager\pictures\photoAspirateur.jpg">        
+        <input type="hidden" name="image" id="image" class="simple-file-upload">        
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
