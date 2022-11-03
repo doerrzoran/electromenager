@@ -41,10 +41,9 @@
     </form>
  </body>
    <script>
-    const message = document.getElementById('image');
-    message.addEventListener('input', function () {
+    var message = document.getElementById('image').oninput = function () {
       document.getElementById('picture').value = this.value;
-    });
+    };
   </script>
   <script src ="../Javascript/redirect.js"></script>
 </html>
