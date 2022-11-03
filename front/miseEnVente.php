@@ -12,6 +12,7 @@
     }
     </script>
 
+    <input type="text" id="test">
     <input type="file" id="image" class="simple-file-upload" required>
     <input type="text" name="image" id="picture" required> >
 
@@ -42,8 +43,8 @@
     </form>
  </body>
    <script>
-    var message = document.getElementById("image").oninput = function () {
-    console.log('test');
+    var message = document.getElementById("test").oninput = function () {
+      console.log('test');
       document.getElementById("picture").value = this.value;
     };
   </script>
