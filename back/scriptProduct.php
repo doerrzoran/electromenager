@@ -8,6 +8,7 @@ var_dump($_POST);
 $productSeller = $_POST["seller"];
 $productType = $_POST["type"];
 $productLabel = $_POST["Label"];
+$productPicture = $_POST["image"];
 $productDescription = $_POST["description"];
 $productPrice = $_POST["price"];
 
