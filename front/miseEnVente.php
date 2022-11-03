@@ -14,7 +14,7 @@
 
     <form class="simple-file-upload">
         <input type="file" id="test">
-    <input type="file" id="image" class="simple-file-upload" required>
+    <input type="file" id="image" required>
     <input type="text" name="image" id="picture" required> >
     </form>
 
