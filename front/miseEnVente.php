@@ -12,6 +12,8 @@
     }
     </script>
 
+    <input type="hidden" id="image" class="simple-file-upload" required>
+
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
         <select name="type">
@@ -29,23 +31,23 @@
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
 
-        <input type="hidden" name="image" id="image" class="simple-file-upload">
+        <input type="hidden" name="image" id="picture" required> >
 
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
-        <input type="number" name="price" required>
+        <input type="number" name="price" required>  
         <button type="submit">enregistrer</button>
     </form>
-    <p id= "click">cliquer</p>
  </body>
- <script src ="../Javascript/redirect.js"></script>
+   <script>
+    const message = document.getElementById('message');
+    message.addEventListener('image', function () {
+      document.getElementById('picture').value = this.value;
+    });
+  </script>
+  <script src ="../Javascript/redirect.js"></script>
 </html>
 
-<script>
-    if(document.getElementById("image").value !== null){
-       var url = document.getElementById("image").value;
-       document.write(url);
-    }
-</script>
+
 
