@@ -12,7 +12,7 @@
     }
     </script>
 
-    <input type="hidden" id="image" class="simple-file-upload" required>
+    <input type="file" id="image" class="simple-file-upload" required>
     <input type="text" name="image" id="picture" required> >
 
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
