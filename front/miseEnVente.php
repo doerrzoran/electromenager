@@ -45,7 +45,7 @@
 <script>
     if(document.getElementById("image").value !== null){
        var url = document.getElementById("image").value;
-       console.log(url);
+       document.write(url);
     }
 </script>
 
