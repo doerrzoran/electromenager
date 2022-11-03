@@ -12,13 +12,8 @@
     }
     </script>
 
-    <form class="simple-file-upload">
-        <input type="file" id="test">
-    <input type="file" id="image" required>
+    <input type="file" id="image" class="simple-file-upload" required>
     <input type="text" name="image" id="picture" required> >
-    </form>
-
-    
 
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
@@ -47,8 +42,8 @@
     </form>
  </body>
    <script>
-    var message = document.getElementById("test").oninput = function () {
-    document.getElementById("image").value = this.value;
+    var message = document.getElementById("image").onFileUploadSuccess = function () {
+      console.log('test');
       document.getElementById("picture").value = this.value;
     };
   </script>
