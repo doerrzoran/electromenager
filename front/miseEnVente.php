@@ -12,13 +12,7 @@
     }
     </script>
 
-    <input type="hidden" id="image" class="simple-file-upload">
-    <script>
-         var url = document.getElementById("image").value;
-         alert(url);
-    </script>
-
-    <!-- <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
+    <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
         <select name="type">
             <option value="1">micro onde</option>
@@ -34,17 +28,24 @@
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
-        <input type="hidden" name="image" value="">
+
+        <input type="hidden" name="image" id="image" class="simple-file-upload">
+
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
         <input type="number" name="price" required>
         <button type="submit">enregistrer</button>
-    </form> -->
-
+    </form>
+    <p id= "click">cliquer</p>
  </body>
  <script src ="../Javascript/redirect.js"></script>
 </html>
 
-
+<script>
+    var click = document.getElementById("click").onclick = function click(){
+       var url = document.getElementById("image").value;
+       console.log(url);
+    }
+</script>
 
