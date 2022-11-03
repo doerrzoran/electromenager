@@ -43,7 +43,7 @@
  </body>
    <script>
     var message = document.getElementById('image').oninput = function () {
-    alert(this.value);
+    alert('test');
       document.getElementById('picture').value = this.value;
     };
   </script>
