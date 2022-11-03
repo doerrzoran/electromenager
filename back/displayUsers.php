@@ -3,7 +3,6 @@
 require_once "dbbFunctions.php";
 
 $users = selectAllFromDatabase("user_acount", $conn);
-$user = $users[1];
 ?>
 
 <script>
