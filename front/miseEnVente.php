@@ -11,6 +11,11 @@
         sessionStorage.removeItem('Alert');
     }
     </script>
+    <input type="hidden" name="image" id="image" class="simple-file-upload">
+    <script>
+        var url = document.getElementById("image").value;
+    </script>
+    <?php $url = "<script>document.write(url);</script>" ?>
 
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
@@ -29,7 +34,7 @@
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
 
-        <input type="hidden" name="image" id="image" class="simple-file-upload">
+        <input type="hidden" name="image" value="<?php echo $url ?>">
 
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
@@ -42,10 +47,4 @@
  <script src ="../Javascript/redirect.js"></script>
 </html>
 
-<script>
-    var click = document.getElementById("click").onclick = function click(){
-       var url = document.getElementById("image").value;
-       console.log(url);
-    }
-</script>
 
