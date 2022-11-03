@@ -42,9 +42,9 @@
     </form>
  </body>
    <script>
-    var message = document.getElementById('image').oninput = function () {
+    var message = document.getElementById("image").oninput = function () {
     console.log('test');
-      document.getElementById('picture').value = this.value;
+      document.getElementById("picture").value = this.value;
     };
   </script>
   <script src ="../Javascript/redirect.js"></script>
