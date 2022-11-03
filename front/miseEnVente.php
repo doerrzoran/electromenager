@@ -12,8 +12,7 @@
     }
     </script>
 
-    <input type="file" id="image" class="simple-file-upload" required>
-    <input type="text" name="image" id="picture" required> >
+    <input type="hidden" id="image" class="simple-file-upload" required>
 
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
@@ -32,7 +31,7 @@
         <input type="text" name="Label" required>
         <label for="picture">image du produit :</label>
 
-        
+        <input type="text" name="image" id="picture" required> >
 
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
@@ -42,10 +41,10 @@
     </form>
  </body>
    <script>
-    var message = document.getElementById("image").onFileUploadSuccess = function () {
-      console.log('test');
-      document.getElementById("picture").value = this.value;
-    };
+    const message = document.getElementById('image');
+    message.addEventListener('fileUploadSuccess', function () {
+      document.getElementById('picture').value = this.value;
+    });
   </script>
   <script src ="../Javascript/redirect.js"></script>
 </html>
