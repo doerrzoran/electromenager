@@ -41,8 +41,8 @@
     </form>
  </body>
    <script>
-    const message = document.getElementById('message');
-    message.addEventListener('image', function () {
+    const message = document.getElementById('image');
+    message.addEventListener('input', function () {
       document.getElementById('picture').value = this.value;
     });
   </script>
