@@ -4,4 +4,7 @@ require_once "../back/dbbFunctions.php";
 
 $products = selectAllFromDatabase("_product", $conn);
 
-var_dump($products);
+foreach($products as $product){
+    var_dump($product);
+}
+
