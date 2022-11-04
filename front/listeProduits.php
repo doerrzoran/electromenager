@@ -10,6 +10,8 @@ require_once "header.html";
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
+        var image = arr['image'];
+        var picture = '<img src="'+ image +'" >';
         document.write(arr['label'] + arr['seller'] + arr['price'] + '<br>');
       };
     }
