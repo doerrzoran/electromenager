@@ -8,10 +8,9 @@ require_once "header.html";
     var data = sessionStorage.getItem('Cle');
     var newArr = JSON.parse(data);
     function tab(newArr){
-        document.write(newArr + '<br>');
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
-        document.write(arr + '<br>');
+        document.write(arr['Label'] + '<br>');
       };
     }
     </script>
