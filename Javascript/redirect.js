@@ -14,10 +14,10 @@
         window.location.href = "../front/miseEnVente.php"
     },
     produits: function() {
-        window.location.href = "../front/listeProduits.php"
+        window.location.href = "../back/displayProduct.php"
     },
     utilisateurs: function() {
-        window.location.href = "../back/.php"
+        window.location.href = "../back/displayUsers.php"
     },
     title: function() {
         window.location.href = "../front/pageAccueil.php"
