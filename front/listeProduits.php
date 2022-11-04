@@ -10,7 +10,7 @@ require_once "header.html";
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
-        document.write(arr['seller'] + '<br>');
+        document.write(arr + '<br>');
       };
     }
     </script>
