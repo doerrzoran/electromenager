@@ -21,7 +21,7 @@
             if(role > 0){
               document.getElementById("creationDeCompte").style.display = "none";
               document.getElementById("connexion").style.display = "none";
-              if(role != 1){
+              if(role !=== 1){
                 document.getElementById("utilisateurs").style.display = "none";
               }
             }else{
