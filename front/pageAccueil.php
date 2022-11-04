@@ -24,9 +24,10 @@
               if(role != 1){
                 document.getElementById("utilisateurs").style.display = "none";
               }
+            }else{
+                document.getElementById("vente").style.display = "none";
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
-        <img src="h86595ffb1a833302f72e63ef50ca2387b75109ce/photoAspirateur.jpg"/>
     </body>
 </html>
