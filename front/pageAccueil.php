@@ -25,7 +25,7 @@
             }else{
                 document.getElementById("vente").style.display = "none";
             }
-            if(role !== 1){
+            if(role != 1){
                 document.getElementById("utilisateurs").style.display = "none";
             }
         </script>
