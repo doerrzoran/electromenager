@@ -3,7 +3,7 @@
 require_once "../back/dbbFunctions.php";
 
 $products = selectAllFromDatabase("_product", $conn);
-
+var_dump($products);
 foreach($products as $product){
     echo $product['Label'];
 }
