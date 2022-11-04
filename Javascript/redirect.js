@@ -19,6 +19,7 @@
     utilisateurs: function() {
         window.location.href = "../back/displayUsers.php"
     },
+    
     title: function() {
         window.location.href = "../front/pageAccueil.php"
     }
