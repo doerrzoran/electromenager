@@ -11,7 +11,7 @@ require_once "header.html";
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
         var image = arr['picture'];
-        var picture = '<img src="'+ image +'" width="1000" length="1000">';
+        var picture = '<img src="'+ image +'" width="500" length="500">';
         document.write(arr['label'] + arr['seller'] + arr['price'] + picture + '<br>');
       };
     }
