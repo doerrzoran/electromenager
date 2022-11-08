@@ -1,6 +1,6 @@
 <?php 
 require_once "header.html"; 
-require_once "back/userId.php"; 
+require_once "../back/userId.php"; 
 ?>
 
 <html>
@@ -9,7 +9,7 @@ require_once "back/userId.php";
       var role = sessionStorage.getItem('Role');
       if(role > 0){
         document.write(role);
-      }
+      };
     var data = sessionStorage.getItem('Cle');
     var newArr = JSON.parse(data);
     function tab(newArr){
