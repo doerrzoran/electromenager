@@ -6,6 +6,7 @@ require_once "back/userId.php";
 <html>
   <body>
     <script>
+      var role = sessionStorage.getItem('Role');
       if(role > 0){
         document.write(role);
       }
