@@ -2,9 +2,8 @@
 require_once "header.html"; 
 require_once "../back/userId.php"; 
 if($userName){
-  ?><script>
-    var user = "<?php echo $userID ?>";
-  </script><?php 
+  echo $userID 
+ 
 }
 ?>
 
