@@ -6,7 +6,6 @@ if($userName){
   echo $userID; 
   ?><script>
     var user = "<?php echo $userID ?>";
-    console.log(user);
   </script><?php 
 }
 ?>
@@ -28,7 +27,7 @@ if($userName){
       };
     }
     </script>
-    <?php 
+    <?php  
     $variable = "<script>tab(newArr);</script>";
     echo $variable;
     ?>
