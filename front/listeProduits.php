@@ -13,9 +13,9 @@ if($userName){
 <html>
   <body>
     <script>
+    var data = sessionStorage.getItem('Cle');
+    var newArr = JSON.parse(data);
     function tab(newArr){
-      var data = sessionStorage.getItem('Cle');
-      var newArr = JSON.parse(data);
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
         var image = arr['picture'];
