@@ -5,7 +5,6 @@ require_once "../back/userId.php";
 
 $products = selectFromDatabase("_product", "user_acount", $userID, $conn);
 
-
 ?>
 
 <script>
