@@ -1,6 +1,7 @@
 <?php 
 require_once "header.html"; 
-require_once "../back/userId.php"; 
+require_once "welcomeUser.php";
+welcomeUser($userName, $userFirstname);
 if($userName){
   echo $userID; 
   ?><script>
