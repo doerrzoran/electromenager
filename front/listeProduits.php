@@ -1,7 +1,7 @@
 <?php 
 require_once "header.html"; 
 require_once "../back/userId.php"; 
-  echo $userID 
+  echo $userID;
  
 
 ?>
