@@ -12,6 +12,7 @@
         </div>
         <div class="event" id="creationDeCompte">creer un compte</div>
         <div class="event" id="connexion">se connecter</div>
+        <div class="event" id="utilisateur">consulter votre page</div>
         <div class="event" id="vente">vendre</div>
         <div class="event" id="produits">consulter les articles</div>
         <div class="event" id="utilisateurs">consulter la liste des utilisateurs</div>
@@ -21,6 +22,7 @@
             if(role > 0){
               document.getElementById("creationDeCompte").style.display = "none";
               document.getElementById("connexion").style.display = "none";
+              document.getElementById("utilisateur").style.display = "none";
             }else{
                 document.getElementById("vente").style.display = "none";
             }

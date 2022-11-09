@@ -21,5 +21,8 @@
     },
     title: function() {
         window.location.href = "../front/pageAccueil.php"
+    },
+    utilisateur: function() {
+        window.location.href = "../back/DisplaySeller.php"
     }
   }
