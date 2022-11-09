@@ -8,8 +8,7 @@
             <?php
             require_once "header.html";
             require_once "welcomeUser.php";
-            ?>
-            <?php welcomeUser($userName, $userFirstname); ?>
+            welcomeUser($userName, $userFirstname); ?>
         </div>
         <div class="event" id="creationDeCompte">creer un compte</div>
         <div class="event" id="connexion">se connecter</div>
