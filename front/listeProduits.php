@@ -1,10 +1,9 @@
 <?php 
 require_once "header.html"; 
 require_once "../back/userId.php"; 
-if($userName){
   echo $userID 
  
-}
+
 ?>
 
 <html>
