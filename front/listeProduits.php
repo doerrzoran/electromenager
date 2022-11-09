@@ -21,9 +21,9 @@ if($userName){
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + user + '<br>');
-        // if(user == arr['seller']){
-        //   document.write('votre produit !');
-        // };
+        if(user == arr['seller']){
+          document.write('votre produit !');
+        };
       };
     }
     </script>
