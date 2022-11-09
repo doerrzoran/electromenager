@@ -3,7 +3,7 @@
 require_once "../back/dbbFunctions.php";
 require_once "../back/userId.php";
 
-$products = selectFromDatabase("_product", "user_acount", $userID, $conn);
+$products = selectFromDatabase("_product", "User_acount", $userID, $conn);
 
 ?>
 
