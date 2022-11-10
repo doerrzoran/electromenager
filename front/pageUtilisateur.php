@@ -17,14 +17,16 @@ if($userName){
     var arr = JSON.parse(data);
     function tab(arr){
       console.log(arr);
-      document.write(arr[3])
-      // for(let i = 0; i < arr.length; i++){
-      //   var arr = arr[i];
-      //   var image = arr['picture'];
-      //   var picture = '<img src="'+ image +'"width="500" length="500">';
-      //   document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + user + '<br>');
-      //   if(user == arr['seller']){
-      //     document.write('votre produit !');
+      // document.write(arr[3])
+      for(let i = 0; i < arr.length; i++){
+        var arr = arr[i];
+        var image = arr['picture'];
+        var picture = '<img src="'+ image +'"width="500" length="500">';
+        document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + user + '<br>');
+        if(user == arr['seller']){
+          document.write('votre produit !');
+        };
+      };
     }
     </script>
     <?php  
