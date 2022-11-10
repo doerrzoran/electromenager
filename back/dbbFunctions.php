@@ -9,6 +9,13 @@ require_once "connectToDatabase.php";
     return $row;
   }
 
+ function selectMultipleFromDatabase($table, $key, $data, $conn){
+    $query = "SELECT * FROM $table WHERE $key = '$data'";
+    $result = pg_query($conn, $query);
+    $all = pg_fetch_all($result);
+    return $all;
+  }
+
   function selectAllFromDatabase($table, $conn){
     $query = "SELECT * FROM $table";
     $result = pg_query($conn, $query);
