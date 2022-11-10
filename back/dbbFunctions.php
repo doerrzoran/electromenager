@@ -5,8 +5,8 @@ require_once "connectToDatabase.php";
  function selectFromDatabase($table, $key, $data, $conn){
     $query = "SELECT * FROM $table WHERE $key = '$data'";
     $result = pg_query($conn, $query);
-    $row = pg_fetch_row($result);
-    return $row;
+    $all = pg_fetch_all($result);
+    return $all;
   }
 
   function selectAllFromDatabase($table, $conn){
