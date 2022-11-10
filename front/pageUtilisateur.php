@@ -25,7 +25,7 @@ if($userName){
       //   if(user == arr['seller']){
       //     document.write('votre produit !');
       //   };
-      };
+      // };
     }
     </script>
     <?php  
