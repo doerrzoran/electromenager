@@ -16,14 +16,15 @@ if($userName){
     var data = sessionStorage.getItem('Cle');
     var newArr = JSON.parse(data);
     function tab(newArr){
-      for(let i = 0; i < newArr.length; i++){
-        var arr = newArr[i];
-        var image = arr['picture'];
-        var picture = '<img src="'+ image +'"width="500" length="500">';
-        document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + user + '<br>');
-        if(user == arr['seller']){
-          document.write('votre produit !');
-        };
+      console.log(newArr);
+      // for(let i = 0; i < newArr.length; i++){
+      //   var arr = newArr[i];
+      //   var image = arr['picture'];
+      //   var picture = '<img src="'+ image +'"width="500" length="500">';
+      //   document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + user + '<br>');
+      //   if(user == arr['seller']){
+      //     document.write('votre produit !');
+      //   };
       };
     }
     </script>
