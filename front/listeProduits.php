@@ -23,7 +23,9 @@ if($userName){
         document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + '<br>');
         if(user == arr['seller']){
           document.write('votre produit !');
-        };
+        }else{
+          
+        }
       };
     }
     </script>
