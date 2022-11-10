@@ -2,6 +2,12 @@
 require_once "header.html"; 
 require_once "welcomeUser.php";
 welcomeUser($userName, $userFirstname);
+if($userName){
+  echo $userID; 
+  ?><script>
+    var user = "<?php echo $userID ?>";
+  </script><?php 
+}
 ?>
 
 <html>
@@ -15,7 +21,9 @@ welcomeUser($userName, $userFirstname);
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + '<br>');
-  
+        if(user == arr['seller']){
+          document.write('votre produit !');
+        };
       };
     }
     </script>
