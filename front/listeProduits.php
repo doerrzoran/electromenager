@@ -5,7 +5,7 @@ welcomeUser($userName, $userFirstname);
 if($userName){
   echo $userID; 
   ?><script>
-    var user = "<?php echo $userID.'test' ?>";
+    var user = "<?php echo $userID ?>";
   </script><?php 
 }
 ?>
@@ -21,7 +21,7 @@ if($userName){
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + '<br>');
-        if(user){
+        if(!user){
           echo 'oui';
         }else{
           echo 'non';
