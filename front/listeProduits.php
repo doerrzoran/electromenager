@@ -5,7 +5,7 @@ welcomeUser($userName, $userFirstname);
 if($userName){
   echo $userID; 
   ?><script>
-    var user = "<?php echo $userID ?>";
+    var user = "<?php echo $userID.'test' ?>";
   </script><?php 
 }
 ?>
