@@ -23,7 +23,7 @@ if($userName){
         if(user > 0){
           document.write('votre produit !');
         }else{ 
-          echo 'non';
+          document.write('non');
         }
       };
     }
