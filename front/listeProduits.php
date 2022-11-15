@@ -2,7 +2,6 @@
 require_once "header.html"; 
 require_once "welcomeUser.php";
 welcomeUser($userName, $userFirstname);
-i
 ?>
 
 <html>
@@ -16,6 +15,7 @@ i
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + '<br>');
+      };
     }
     </script>
     <?php  
