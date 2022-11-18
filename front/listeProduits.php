@@ -22,7 +22,7 @@ welcomeUser($userName, $userFirstname);
     </script>
     <?php  
     $variable = "<script>tab(newArr);</script>";
-    echo $ ;
+    echo $variable ;
     ?>
   </body>
   
