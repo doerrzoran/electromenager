@@ -4,7 +4,7 @@ require_once "../back/dbbFunctions.php";
 require_once "../back/userId.php";
 
 $products = selectMultipleFromDatabase("_product", "seller", $userID, $conn);
-print_r($products);
+var_dump($products);
 ?>
 
 <script>
