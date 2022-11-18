@@ -2,6 +2,7 @@
 require_once "header.html"; 
 require_once "welcomeUser.php";
 welcomeUser($userName, $userFirstname);
+echo 'oui';
 echo $userID;
 if($userID){
  ?>
