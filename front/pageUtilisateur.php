@@ -13,8 +13,7 @@ welcomeUser($userName, $userFirstname);
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
-        var image = arr['picture'];
-        console.log(image);
+        var image = arr['picture']; 
         var picture = '<img src="'+ image +'"width="500" length="500">';
         console.log(picture);
         document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + picture + '<br>');
