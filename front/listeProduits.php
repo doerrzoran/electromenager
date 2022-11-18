@@ -2,20 +2,7 @@
 require_once "header.html"; 
 require_once "welcomeUser.php";
 welcomeUser($userName, $userFirstname);
-echo $userID;
-if($userID){
- ?>
-  <script>
-    user = <?php echo $userID ?>;
-  </script>
- <?php
-}else{
-  ?>
-  <script>
-    user = ' ';
-  </script>
- <?php 
-};
+
 ?>
 
 <html>
