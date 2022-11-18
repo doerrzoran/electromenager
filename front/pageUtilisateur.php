@@ -8,16 +8,17 @@ welcomeUser($userName, $userFirstname);
 <html>
   <body>
     <script>
-    var data = sessionStorage.getItem('Cle');
-    var newArr = JSON.parse(data);
-    console.log(newArr[0])
-    function tab(newArr){
-      for(let i = 0; i < newArr.length; i++){
-        var arr = newArr[i];
-        // var image = arr['picture'];
-        // var picture = '<img src="'+ image +'"width="500" length="500">';
-        document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + '<br>');
-      }
+        var data = sessionStorage.getItem('Cle');
+    var arr = JSON.parse(data);
+    function tab(arr){
+      console.log(arr);
+      // document.write(arr[3])
+      for(let i = 0; i < arr.length; i++){
+        var arr = arr[i];
+        var image = arr['picture'];
+        var picture = '<img src="'+ image +'"width="500" length="500">';
+        document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + picture + '<br>');
+      };
     }
     </script>
     <?php  
