@@ -31,7 +31,7 @@ if($userID){
         if(user == arr['seller']){
           document.write('votre article');
         }else{
-          document.write('pass');
+          document.write(' ');
         }
       }
     }
