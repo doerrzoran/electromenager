@@ -8,6 +8,8 @@ welcomeUser($userName, $userFirstname);
 <html>
   <body>
     <script>
+    var data = sessionStorage.getItem('Cle');
+    var newArr = JSON.parse(data);
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
