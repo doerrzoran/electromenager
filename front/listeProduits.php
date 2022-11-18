@@ -1,8 +1,9 @@
 <?php 
 require_once "header.html"; 
 require_once "welcomeUser.php";
-welcomeUser($userName, $userFirstname);
 echo 'oui';
+welcomeUser($userName, $userFirstname);
+
 echo $userID;
 if($userID){
  ?>
