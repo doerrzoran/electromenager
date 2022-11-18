@@ -1,9 +1,7 @@
 <?php 
 require_once "header.html"; 
 require_once "welcomeUser.php";
-echo 'oui';
 welcomeUser($userName, $userFirstname);
-
 echo $userID;
 if($userID){
  ?>
@@ -31,7 +29,7 @@ if($userID){
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + arr['seller'] + arr['description'] + arr['price'] + '€ ' + picture + '<br>');
-        document.write(user);
+        // document.write(user);
       }
     }
     </script>
