@@ -11,12 +11,12 @@ welcomeUser($userName, $userFirstname);
     var data = sessionStorage.getItem('Cle');
     var arr = JSON.parse(data);
     function tab(arr){
-      console.log(arr);
-      // document.write(arr[3])
       for(let i = 0; i < arr.length; i++){
         var arr = arr[i];
         var image = arr['picture'];
+        console.log(image);
         var picture = '<img src="'+ image +'"width="500" length="500">';
+        console.log(picture);
         document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + picture + '<br>');
       };
     }
