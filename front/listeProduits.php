@@ -7,14 +7,14 @@ if($userID){
   <script>
     user = <?php echo $userID ?>;
   </script>
- <?php 
+ <?php
 }else{
   ?>
   <script>
     user = ' ';
   </script>
  <?php 
-}
+};
 ?>
 
 <html>
