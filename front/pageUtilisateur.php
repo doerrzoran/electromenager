@@ -10,9 +10,10 @@ welcomeUser($userName, $userFirstname);
     <script>
     var data = sessionStorage.getItem('Cle');
     var newArr = JSON.parse(data);
+    console.log(newArr[0])
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
-        var arr = newArr[0];
+        var arr = newArr[i];
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + picture + '<br>');
