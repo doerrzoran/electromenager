@@ -11,6 +11,7 @@ welcomeUser($userName, $userFirstname);
      var data = sessionStorage.getItem('Cle');
     var arr = JSON.parse(data);
     var test = arr[0];
+    var test = test[1];
     function tab(test){
       console.log(test);
       for(let i = 0; i < arr.length; i++){
