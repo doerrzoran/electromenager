@@ -12,7 +12,7 @@ welcomeUser($userName, $userFirstname);
     var arr = JSON.parse(data);
     var test = arr[0];
     function tab(test){
-      console.log(arr);
+      console.log(test);
       for(let i = 0; i < arr.length; i++){
         // var arr = arr[i];
         var image = arr['picture'];
