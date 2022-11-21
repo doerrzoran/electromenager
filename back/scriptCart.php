@@ -1,9 +1,13 @@
 <?php
-echo 'ici';
-// require_once 'dbbFunctions.php';
-// var_dump($_POST);
+require_once 'dbbFunctions.php';
+require_once 'userId.php';
 
-// $user= $_POST["seller"];
-// $product = $_POST["type"];
+var_dump($_POST);
+
+$user = $userID;
+$product = $_POST["product"];
+
+echo $user;
+echo $product;
  
-// $product = insertIntoDatabase("_cart", "", "", $conn);
+$product = insertIntoDatabase("_cart", "client", "", $conn);
