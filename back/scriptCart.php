@@ -10,4 +10,4 @@ $product = $_POST["product"];
 echo $user;
 echo $product;
  
-$product = insertIntoDatabase("_cart", "client", "", $conn);
+// $product = insertIntoDatabase("_cart", "client", "", $conn);
