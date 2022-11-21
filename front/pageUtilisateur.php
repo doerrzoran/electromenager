@@ -11,9 +11,10 @@ welcomeUser($userName, $userFirstname);
      var data = sessionStorage.getItem('Cle');
     var arr = JSON.parse(data);
     var test = arr[0];
+    console.log(test);
     var test = test[1];
+    console.log(test);
     function tab(test){
-      console.log(test);
       for(let i = 0; i < arr.length; i++){
         // var arr = arr[i];
         var image = arr['picture'];
