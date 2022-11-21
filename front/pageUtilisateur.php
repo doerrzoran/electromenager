@@ -14,6 +14,7 @@ welcomeUser($userName, $userFirstname);
      
     function tab(test){
       for(let i = 0; i < newArr.length; i++){
+        console.log(i);
         var arr = newArr[i];
         console.log(arr)
         var image = arr['picture'];
