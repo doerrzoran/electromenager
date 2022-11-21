@@ -6,7 +6,7 @@ require_once 'userId.php';
 ?>
 <script>
 user = <?php echo $userID ?>
-if(user = null){
+if(user == null){
   window.location.href = "../front/creationDeCompte.php";
 }
 </script>
