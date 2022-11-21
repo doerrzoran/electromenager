@@ -6,8 +6,9 @@ require_once 'userId.php';
 ?>
 <script>
 var user = <?php echo $userID ?>
-console.log(user);
 if(user == null){
+  var message ='veuillez vous identifier afin d\'effectuer un achat';
+  <script src='../Javascript/redirectConnexion.js' ></script>
   window.location.href = "../front/creationDeCompte.php";
 }
 </script>
