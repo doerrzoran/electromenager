@@ -13,7 +13,7 @@ welcomeUser($userName, $userFirstname);
     var test = arr[0];
     console.log(test);
     var test = test[1];
-    console.log(test);
+    // console.log(test);
     function tab(test){
       for(let i = 0; i < arr.length; i++){
         // var arr = arr[i];
