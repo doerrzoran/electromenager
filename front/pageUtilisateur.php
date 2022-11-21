@@ -12,7 +12,7 @@ welcomeUser($userName, $userFirstname);
      var newArr = JSON.parse(data);
      console.log(newArr);
      
-    function tab(test){
+    function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         console.log(i);
         var arr = newArr[i];
@@ -24,7 +24,7 @@ welcomeUser($userName, $userFirstname);
     }
     </script>
     <?php  
-    $variable = "<script>tab(arr);</script>";
+    $variable = "<script>tab(newArr);</script>";
     echo $variable;
     ?>
   </body>
