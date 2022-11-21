@@ -27,7 +27,7 @@ if($userID){
         var arr = newArr[i];
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
-        var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="id" value="' + arr['id'] + '"><button type ="submit">suppprimer cet utilisateur</button></form>';
+        var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="id" value="' + arr['id'] + '"><button type ="submit">suppprimer ce pruduit</button></form>';
         document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + picture + '<br>');
         if(user == arr['seller']){
           document.write('votre article ');
