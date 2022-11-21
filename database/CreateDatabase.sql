@@ -47,4 +47,12 @@ CREATE TABLE IF NOT EXISTS _comment(
   text VARCHAR (250) NOT NULL,
   date DATE NOT NULL,
   FOREIGN KEY(author) REFERENCES User_acount(id)
+);
+
+CREATE TABLE IF NOT EXISTS _cart(
+  id serial PRIMARY KEY,
+  client INTEGER NOT NULL,
+  product INTEGER NOT NULL,
+  FOREIGN KEY(client) REFERENCES User_acount(id),
+  FOREIGN KEY(product) REFERENCES _product(id)
 )
