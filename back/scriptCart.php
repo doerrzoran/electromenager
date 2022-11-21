@@ -1,5 +1,5 @@
 <?php
-echo 'ici'0;
+echo 'ici';
 // require_once 'dbbFunctions.php';
 // var_dump($_POST);
 
