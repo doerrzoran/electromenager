@@ -14,7 +14,8 @@ welcomeUser($userName, $userFirstname);
       console.log(newArr);
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
-        document.write(arr[1]);
+        document.write(arr[2]);
+        document.write('test');
         var image = arr['picture'];
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr['label'] + ' ' + arr['seller'] + ' ' + arr['description'] + ' ' + arr['price'] + '€ ' + ' ' + picture + '<br>');
