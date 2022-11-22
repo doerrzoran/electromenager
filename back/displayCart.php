@@ -7,7 +7,7 @@ $carts = selectMultipleFromDatabase("_cart", "client", $userID, $conn);
 
 $products = array();
 foreach($carts as $cart){
-    $product = $cart['produit'];
+    $product = $cart['product'];
     $products[] = $product;
 }
 
