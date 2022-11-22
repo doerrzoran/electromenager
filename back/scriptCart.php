@@ -18,3 +18,5 @@ $product = $_POST["product"];
 
 $product = insertIntoDatabase("_cart", "client, product", "'$user', '$product'", $conn);
 
+header("Location: displayCart.php");
+
