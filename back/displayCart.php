@@ -7,11 +7,11 @@ $carts = selectMultipleFromDatabase("_cart", "client", $userID, $conn);
 
 $products = array();
 foreach($carts as $cart){
-    $product = $cart['product'];
+    $productID = $cart['product'];
+    $product = selectFromDatabase("_product", "id", $productID, $conn)
     $products[] = $product;
 }
 
-var_dump($products);
 ?>
 
 <script>
