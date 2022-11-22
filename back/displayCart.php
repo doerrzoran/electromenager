@@ -6,7 +6,8 @@ require_once "../back/userId.php";
 $carts = selectMultipleFromDatabase("_cart", "client", $userID, $conn);
 
 $products = array();
-foreach($carts as $product){
+foreach($carts as $cart){
+    $product = $cart['produit'];
     $products[] = $product;
 }
 
