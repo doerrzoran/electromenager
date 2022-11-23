@@ -24,5 +24,8 @@
     },
     utilisateur: function() {
         window.location.href = "../back/DisplaySeller.php"
+    },
+    cart: function() {
+        window.location.href = "../back/displayCart.php"
     }
   }
