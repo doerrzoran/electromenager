@@ -7,7 +7,7 @@ welcomeUser($userName, $userFirstname);
 
 <html>
   <body>
-    <div id = "cart">consulter votre panier</div>
+    <div class="event" id ="cart">consulter votre panier</div>
     <script>
      var data = sessionStorage.getItem('Cle');
      var newArr = JSON.parse(data);
