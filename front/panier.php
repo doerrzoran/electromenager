@@ -11,7 +11,6 @@ welcomeUser($userName, $userFirstname);
      var data = sessionStorage.getItem('Cle');
      var newArr = JSON.parse(data);
     function tab(newArr){
-      console.log(newArr);
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
         var image = arr[4];
@@ -23,7 +22,7 @@ welcomeUser($userName, $userFirstname);
     <?php  
     $variable = "<script>tab(newArr);</script>";
     echo $variable;
-    ?>
+    ?> 
   </body>
   
   <script src ="../Javascript/redirect.js"></script>
