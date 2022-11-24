@@ -6,7 +6,8 @@ $id = $_POST['id'];
 
 $product = selectFromDatabase("_product", "seller", $id, $conn);
 
-echo $product;
+var_dump($product);
+print_r($product);
 
 // $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
