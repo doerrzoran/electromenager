@@ -15,7 +15,7 @@
             <label for="prenom">prenom:</label>
             <input type="text" name="prenom" required>
             <label for="mail">addresse mail</label>
-            <input type="email" name="mail" pattern=".+@g+.com" required>
+            <input type="email" name="mail" pattern="+@g+.com" required>
             <label for="Password">mot de passe</label>
             <input type="password" name="password" minlength="5" maxlength="10" required >
             <label for="password2">confirmer le mot de pase</label>
