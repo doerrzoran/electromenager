@@ -7,4 +7,4 @@ echo $product;
 
 $deletion = deleteFromDatabase("_cart", "product", $product, $conn);
 
-// header("Location: displayCart.php");
+header("Location: displayCart.php");
