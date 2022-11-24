@@ -4,6 +4,14 @@ require_once 'dbbFunctions.php';
 
 $id = $_POST['id'];
 
-$deletion = deleteFromDatabase("user_acount", "id", $id, $conn);
+$product = selectFromDatabase("_product", "seller", $id, $conn);
 
-header("Location: displayUsers.php");
+echo $product;
+
+// $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
+
+// $deletionUser = deleteFromDatabase("user_acount", "id", $id, $conn);
+
+
+
+// header("Location: displayUsers.php");
