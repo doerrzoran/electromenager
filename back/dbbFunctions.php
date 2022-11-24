@@ -31,7 +31,7 @@ require_once "connectToDatabase.php";
   } 
 
   function deleteFromDatabase($table, $key, $data, $conn){
-    $query = "DELETE FROM $table WHERE $key = '$data'";
+    $query = "DELETE * FROM $table WHERE $key = '$data'";
     $result = pg_query($conn, $query);
     return $result;
   }
