@@ -8,7 +8,7 @@ $product = selectFromDatabase("_product", "seller", $id, $conn);
 
 var_dump($product);
 print_r($product);
-echo $product[1];
+echo $product[0];
 
 // $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
