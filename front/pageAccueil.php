@@ -28,6 +28,7 @@
             }
             if(role != 1){
                 document.getElementById("utilisateurs").style.display = "none";
+                document.getElementById("administrateur").style.display = "none";
             }
         </script>
         <script src ="../Javascript/redirect.js"></script>
