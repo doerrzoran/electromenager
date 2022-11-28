@@ -27,5 +27,8 @@
     },
     cart: function() {
         window.location.href = "../back/displayCart.php"
+    },
+    administrateur: function() {
+        window.location.href = "../front/nouvelAdministrateur.php"
     }
   }
