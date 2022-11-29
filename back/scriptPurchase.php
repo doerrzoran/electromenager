@@ -9,4 +9,4 @@ $product = $_POST["product"];
     
 $product = insertIntoDatabase("_purchase", "product", "'$product'", $conn);
 
-header('Location: ../front/listeProduits.php');
+// header('Location: ../front/listeProduits.php');
