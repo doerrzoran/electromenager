@@ -11,5 +11,7 @@ $date = date('d/m/yy');
 
     
 $product = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', current_timestamp", $conn);
+$deletion = deleteFromDatabase("_cart", "product", $product, $conn);
+$deletion = deleteFromDatabase("_product", "id", $product, $conn);
 
-header('Location: ../front/pageUtilisateur.php');
+header('Location: ../back/deleteCart.php');
