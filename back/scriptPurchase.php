@@ -8,6 +8,6 @@ $product = $_POST["product"];
 $date = date('d/m/yy');
 
     
-$product = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', DATE 'DD/MM/YYYY'", $conn);
+$product = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', 'DD-MM-YYYY'", $conn);
 
 // header('Location: ../front/listeProduits.php');
