@@ -5,6 +5,7 @@ require_once 'userId.php';
 
 $user = $userID;
 $product = $_POST["product"];
+$date = date('d/m/yy');
 
     
 $product = insertIntoDatabase("_purchase", "buyer, product", "'$user', '$product'", $conn);
