@@ -11,6 +11,7 @@ $product = $products[0];
 $deletionProduct = deleteFromDatabase("_product", "id", $products, $conn);
 
 $deletionUser = deleteFromDatabase("user_acount", "id", $id, $conn);
+$deletion = deleteFromDatabase("_product", "id", $product, $conn);
 
 
 
