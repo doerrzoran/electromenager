@@ -17,8 +17,9 @@ welcomeUser($userName, $userFirstname);
         var picture = '<img src="'+ image +'"width="500" length="500">';
         document.write(arr[3] + ' ' + arr[5] + ' ' + arr[6] + '€ ' + ' ' + picture + '<br>');
         var form = '<form action="../back/deleteCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr[0] + '"><button type ="submit">retirer ce produit de votre panier</button></form>';
-        var form = '<form action="../back/deleteCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr[0] + '"><button type ="submit">acheter</button></form>';
+        var buy = '<form action="../back/deleteCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr[0] + '"><button type ="submit">acheter</button></form>';
         document.write(form);
+        document.write(buy);
       };
     }
     </script>
