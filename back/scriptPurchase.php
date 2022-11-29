@@ -5,9 +5,9 @@ require_once 'userId.php';
 
 $user = $userID;
 $product = $_POST["product"];
-// $date = date('d/m/yy');
+$date = date('d/m/yy');
 
     
-$product = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', date('d/m/yy')", $conn);
+$product = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', 'TO_DATE('DD/MM/YYYY')'", $conn);
 
 // header('Location: ../front/listeProduits.php');
