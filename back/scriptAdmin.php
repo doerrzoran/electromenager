@@ -9,4 +9,4 @@ require_once 'dbbFunctions.php';
 
  $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 1", $conn);    
     
-header('Location: ../front/listeUtilisateurs.php');
+header('Location: ../front/listeUtilisateurs.php'); 
