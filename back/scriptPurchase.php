@@ -14,4 +14,4 @@ $cartID = $cart[0];
 $deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
 $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
-header('Location: ../back/deleteCart.php');
+header('Location: ../front/pageUtilisateur.php');
