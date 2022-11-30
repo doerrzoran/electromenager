@@ -7,7 +7,7 @@ $user = $userID;
 $product = $_POST["product"];
 
     
-$product = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', current_timestamp", $conn);
+$purchase = insertIntoDatabase("_purchase", "buyer, product, date", "'$user', '$product', current_timestamp", $conn);
 $cart = selectFromDatabase("_cart", "client", $userID, $conn);
 
 $cartID = $cart[0];
