@@ -4,7 +4,7 @@ require_once 'dbbFunctions.php';
 
 $productID = $_POST['product'];
 
-$product = selectFromDatabase('_product', 'id', $productID, $conn)
+$product = selectFromDatabase('_product', 'id', $productID, $conn);
 
 echo $product;
 
