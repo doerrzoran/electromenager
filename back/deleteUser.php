@@ -8,7 +8,7 @@ $products = selectFromDatabase("_product", "seller", $id, $conn);
 
 $product = $products[0];
 
-$deletionProduct = deleteFromDatabase("_product", "id", $products, $conn);
+$deletionProduct = deleteFromDatabase("_product", "seller", $id, $conn);
 
 $deletionUser = deleteFromDatabase("user_acount", "id", $id, $conn);
 
