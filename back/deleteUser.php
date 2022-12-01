@@ -13,7 +13,10 @@ $cart = selectFromDatabase("_cart", "client", $id, $conn);
 $cartID = $cart[0];
 $deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
 
-$deletionProduct = deleteFromDatabase("_product", "seller", $id, $conn);
+$productID = selectFromDatabase("_product", "seller", $id, $conn);
+$productID = $productID[0];
+
+$deletionProduct = deleteFromDatabase("_product", "id", $productID, $conn);
 
 
 
