@@ -2,8 +2,12 @@
 
 require_once 'dbbFunctions.php';
 
-$product = $_POST['product'];
+$productID = $_POST['product'];
+
+$product = selectFromDatabase('_product', 'id', $productID, $conn)
+
 echo $product;
+
 
 $deletion = deleteFromDatabase('_product', 'id', $product, $conn);
 
