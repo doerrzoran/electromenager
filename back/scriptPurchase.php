@@ -19,13 +19,13 @@ echo $price;
 //enregistrement purchase
 $purchase = insertIntoDatabase("user_purchase", "price, buyer, date", "'$price', '$user', current_timestamp", $conn);
 
-//suppression panier
-$cart = selectFromDatabase("_cart", "client", $userID, $conn);
-$cartID = $cart[0];
-$deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
+// //suppression panier
+// $cart = selectFromDatabase("_cart", "client", $userID, $conn);
+// $cartID = $cart[0];
+// $deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
 
-//suppression produit
+// //suppression produit
 
-$deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
+// $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
-// header('Location: ../front/pageUtilisateur.php');
+// // header('Location: ../front/pageUtilisateur.php');
