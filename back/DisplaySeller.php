@@ -3,7 +3,7 @@
 require_once "../back/dbbFunctions.php";
 require_once "../back/userId.php";
 
-$products = selectMultipleFromDatabase("_product", "buyer", $userID, $conn);
+$products = selectMultipleFromDatabase("_product", "seller", $userID, $conn);
 ?>
 
 <script>
