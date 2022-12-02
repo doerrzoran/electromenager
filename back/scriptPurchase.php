@@ -17,7 +17,7 @@ echo $type;
 echo $price;
 
 //enregistrement purchase
-$purchase = insertIntoDatabase("_purchase", "price, buyer, date", "'$price', '$user', current_timestamp", $conn);
+$purchase = insertIntoDatabase("user_purchase", "price, buyer, date", "'$price', '$user', current_timestamp", $conn);
 
 //suppression panier
 $cart = selectFromDatabase("_cart", "client", $userID, $conn);
