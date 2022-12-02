@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS _product(
   FOREIGN KEY(type) REFERENCES _type(id)
 );
 
+
 CREATE TABLE IF NOT EXISTS _type(
   id serial PRIMARY KEY,
   typelabel VARCHAR (250) NOT NULL
@@ -34,10 +35,11 @@ CREATE TABLE IF NOT EXISTS _type(
 
 CREATE TABLE IF NOT EXISTS _purchase(
   id serial PRIMARY KEY,
-  product INTEGER NOT NULL,
+  type VARCHAR (250) NOT NULL,
+  price INTEGER NOT NULL,
   buyer INTEGER NOT NULL,
   date DATE NOT NULL,
-  FOREIGN KEY(product) REFERENCES _product(id),
+  FOREIGN KEY(type) REFERENCES _type(id),
   FOREIGN KEY(buyer) REFERENCES User_acount(id)
 );
 
