@@ -28,4 +28,4 @@ $purchase = insertIntoDatabase("user_purchase", "price, buyer, date", "'$price',
 
 // $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
-// // header('Location: ../front/pageUtilisateur.php');
+header('Location: ../back/back/deleteProduct.php');
