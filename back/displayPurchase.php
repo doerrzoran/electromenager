@@ -10,5 +10,5 @@ $purchase = selectMultipleFromDatabase("user_purchase", "buyer", $userID, $conn)
 var arr = <?php echo json_encode($purchase); ?>;
 </script>
 <script src="../Javascript/redirectUsersInfo.js"></script>
-<script> window.location.href = "../front/pageUtilisateur.php" </script>
+<script> window.location.href = "../front/historiqueDesAchats.php" </script>
  
