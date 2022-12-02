@@ -30,5 +30,8 @@
     },
     administrateur: function() {
         window.location.href = "../front/nouvelAdministrateur.php"
+    },
+    purchase: function() {
+        window.location.href = "../front/nouvelAdministrateur.php"
     }
   }
