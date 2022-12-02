@@ -2,6 +2,7 @@
 require_once 'dbbFunctions.php';
 require_once 'userId.php';
 
+$product = $_POST["product"];
 
 $user = $userID;
 echo $user;
@@ -24,7 +25,7 @@ $cartID = $cart[0];
 $deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
 
 //suppression produit
-$product = $_POST["product"];
+
 $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
 // header('Location: ../front/pageUtilisateur.php');
