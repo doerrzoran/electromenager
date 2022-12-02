@@ -33,13 +33,11 @@ CREATE TABLE IF NOT EXISTS _type(
   typelabel VARCHAR (250) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS _purchase(
+CREATE TABLE IF NOT EXISTS user_purchase(
   id serial PRIMARY KEY,
-  type VARCHAR (250) NOT NULL,
   price INTEGER NOT NULL,
   buyer INTEGER NOT NULL,
   date DATE NOT NULL,
-  FOREIGN KEY(type) REFERENCES _type(id),
   FOREIGN KEY(buyer) REFERENCES User_acount(id)
 );
 
