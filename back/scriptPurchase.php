@@ -4,6 +4,7 @@ require_once 'userId.php';
 
 
 $user = $userID;
+echo $user;
 
 // recupération des info produit
 
@@ -13,7 +14,6 @@ $price =  $selectProduct[6];
 
 echo $type;
 echo $price;
-echo $user;
 
 //enregistrement purchase
 $purchase = insertIntoDatabase("_purchase", "type, price, buyer, date", "'$type', '$price', '$user', current_timestamp", $conn);
