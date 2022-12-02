@@ -10,6 +10,7 @@ welcomeUser($userName, $userFirstname);
     <script>
      var data = sessionStorage.getItem('Cle');
      var newArr = JSON.parse(data);
+     console.log(newArr);
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         arr = newArr[i];
