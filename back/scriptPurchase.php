@@ -25,4 +25,4 @@ $deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
 $product = $_POST["product"];
 $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
-header('Location: ../front/pageUtilisateur.php');
+// header('Location: ../front/pageUtilisateur.php');
