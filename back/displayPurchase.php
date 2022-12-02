@@ -11,3 +11,4 @@ var arr = <?php echo json_encode($purchase); ?>;
 </script>
 <script src="../Javascript/redirectUsersInfo.js"></script>
 <script> window.location.href = "../front/pageUtilisateur.php" </script>
+ 
