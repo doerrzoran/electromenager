@@ -32,6 +32,6 @@
         window.location.href = "../front/nouvelAdministrateur.php"
     },
     purchase: function() {
-        window.location.href = "../front/nouvelAdministrateur.php"
+        window.location.href = "../back/displayPurchase.php"
     }
   }
