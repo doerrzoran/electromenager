@@ -11,6 +11,8 @@ $selectProduct = selectFromDatabase("_product", "id", $product, $conn);
 $type = $selectProduct[2];
 $price =  $selectProduct[6];
 
+echo $type.' '.$price.' '.$user.' ';
+
 //enregistrement purchase
 $purchase = insertIntoDatabase("_purchase", "type, price, buyer, date", "'$type', '$price', '$user', current_timestamp", $conn);
 
@@ -23,4 +25,4 @@ $deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
 $product = $_POST["product"];
 $deletionProduct = deleteFromDatabase("_product", "id", $product, $conn);
 
-// header('Location: ../front/pageUtilisateur.php');
+header('Location: ../front/pageUtilisateur.php');
