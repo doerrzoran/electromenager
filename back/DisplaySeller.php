@@ -3,11 +3,11 @@
 require_once "../back/dbbFunctions.php";
 require_once "../back/userId.php";
 
-$purchase = selectMultipleFromDatabase("_product", "buyer", $userID, $conn);
+$products = selectMultipleFromDatabase("_product", "buyer", $userID, $conn);
 ?>
 
 <script>
-var arr = <?php echo json_encode($purchase); ?>;
+var arr = <?php echo json_encode($products); ?>;
 </script>
 <script src="../Javascript/redirectUsersInfo.js"></script>
 <script> window.location.href = "../front/pageUtilisateur.php" </script>

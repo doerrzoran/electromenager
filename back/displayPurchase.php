@@ -3,19 +3,11 @@
 require_once "../back/dbbFunctions.php";
 require_once "../back/userId.php";
 
-$carts = selectMultipleFromDatabase("_cart", "client", $userID, $conn);
-
-$products = array();
-foreach($carts as $cart){
-    $productID = $cart['product'];
-    $product = selectFromDatabase("_product", "id", $productID, $conn);
-    $products[] = $product;
-}
-
+$purchase = selectMultipleFromDatabase("user_purchase", "buyer", $userID, $conn);
 ?>
 
 <script>
-var arr = <?php echo json_encode($products); ?>;
+var arr = <?php echo json_encode($purchase); ?>;
 </script>
 <script src="../Javascript/redirectUsersInfo.js"></script>
-<script> window.location.href = "../front/panier.php" </script>
+<script> window.location.href = "../front/pageUtilisateur.php" </script>
