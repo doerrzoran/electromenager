@@ -14,7 +14,7 @@ welcomeUser($userName, $userFirstname);
     function tab(newArr){
       for(let i = 0; i < newArr.length; i++){
         arr = newArr[i];
-        document.write(arr[1] + ' ' + arr[2] + ' ' + arr['price'] + '€ ' + ' ' + '<br>');
+        document.write(arr[4DATE] + ' ' + arr['price'] + '€ ' + ' ' + '<br>');
       };
     }
     </script>
