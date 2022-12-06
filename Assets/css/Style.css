@@ -1,0 +1,26 @@
+main{
+    height:100%;
+}
+
+header{
+    min-height:50px;
+    background-color: red;
+}
+
+body{
+    height:100vh; 
+    margin:0; 
+    padding-bottom: 100%;
+    display:flex; 
+   flex-direction:column;
+}
+
+
+footer{
+    margin-top: auto;
+    height: ;
+    background-color: gray;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
