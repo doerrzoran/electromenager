@@ -1,5 +1,4 @@
 
-    
         <div>
             <?php
             require_once "header.html";
@@ -29,4 +28,7 @@
         </script>
         <script src ="../Javascript/redirect.js"></script>
     </body>
+    <?php
+        require_once "footer.html"; 
+    ?>
 </html>
