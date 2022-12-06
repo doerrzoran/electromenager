@@ -41,6 +41,9 @@
         <button type="submit">enregistrer</button>
     </form>
  </body>
+ <?php
+      require_once "footer.html"; 
+  ?>
    <script>
     const message = document.getElementById('image');
     message.addEventListener('fileUploadSuccess', function () {

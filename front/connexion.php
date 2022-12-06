@@ -18,5 +18,8 @@
             <button type="submit" id="event">vous identifier</button>
         </form>
     </body>
+    <?php
+        require_once "footer.html"; 
+    ?>
     <script src ="../Javascript/redirect.js"></script>
 </html>

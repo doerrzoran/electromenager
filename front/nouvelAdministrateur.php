@@ -23,6 +23,9 @@
             <input type="submit"> </input>
         </form>
     </body>
+    <?php
+        require_once "footer.html"; 
+    ?>
     <script src ="../Javascript/redirect.js"></script>
 
 </html>
