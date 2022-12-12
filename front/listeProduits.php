@@ -35,8 +35,9 @@ if($userID){
         if(user == arr['seller']){
           document.write('votre article ');
           document.write(form);
-        }else{
           document.write(purchase);
+        }else{
+          
         }
       }
     }
