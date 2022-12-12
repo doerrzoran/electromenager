@@ -28,8 +28,8 @@ if($userID){
         var image = arr['picture'];
         var picture = '<img class="img-fluid img-thumbnail" alt="Responsive image" src="'+ image +'"width="300" length="300">';
         var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">suppprimer ce produit</button></form>';
-        document.write(arr['label'] + ' ' + '<br>');
-        document.write(picture + '<br>');
+        document.write(picture);
+        document.write(arr['label'] + '<br>');
         document.write(arr['description'] + ' ' + arr['price'] + '€ ' + '<br>');
         var purchase = '<form action="../back/scriptCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">ajouter ce produit à votre panier</button></form>';
         if(user == arr['seller']){
