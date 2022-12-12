@@ -27,7 +27,7 @@ if($userID){
         var arr = newArr[i];
         var image = arr['picture'];
         var picture = '<img class="text-justify figure-img  img-fluid img-thumbnail" alt="Responsive image" src="'+ image +'"width="300" length="300">';
-        var test = '<figcaption class="figure-caption">A caption for the above image.</figcaption>';
+        var test = '<p class="figure-caption">A caption for the above image.</p>';
         var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">suppprimer ce produit</button></form>';
         document.write(arr['label'] + ' ' + '<br>');
         document.write(picture + ' ' + test);
