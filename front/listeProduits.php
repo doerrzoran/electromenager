@@ -26,7 +26,7 @@ if($userID){
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
         var image = arr['picture'];
-        var picture = '<img class=" d-inline img-fluid img-thumbnail" alt="Responsive image" src="'+ image +'"width="500" length="500">';
+        var picture = '<img class=" d-inline img-fluid img-thumbnail" alt="Responsive image" src="'+ image +'"width="300" length="300">';
         var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">suppprimer ce produit</button></form>';
         document.write(arr['label'] + ' ' + '<br>');
         document.write(picture);
