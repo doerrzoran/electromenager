@@ -36,7 +36,7 @@
         </div>
         <div> 
           <label for="description">description :</label>
-          <textarea name="description" id="" cols="30" rows="5" minlength="20" maxlength="30" required >description</textarea>
+          <textarea name="description" id="" cols="50" rows="3" minlength="20" maxlength="30" required >description</textarea>
         </div>
         <div>
           <label for="price">prix:</label>
