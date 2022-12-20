@@ -36,7 +36,7 @@
         </div>
         <div> 
           <label for="description">description :</label>
-          <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
+          <textarea name="description" id="" cols="30" rows="5" minlength="20" maxlength="30" required >description</textarea>
         </div>
         <div>
           <label for="price">prix:</label>
@@ -47,7 +47,7 @@
         
         
         <input type="hidden" id="image" class="simple-file-upload" required>
-        <input type="text" name="image" id="picture" required>
+        <input type="hidden" name="image" id="picture" required>
        
         
         <button type="submit">enregistrer</button>
