@@ -6,7 +6,7 @@
             welcomeUser($userName, $userFirstname); ?>
         </div>
 
-        <ul class="list-group-flush">
+        <ul>
             <li><div class="event" id="creationDeCompte" style="cursor:pointer;">creer un compte</div></li>
             <li><div class="event" id="connexion" style="cursor:pointer;">se connecter</div></li>
             <li><div class="event" id="utilisateur" style="cursor:pointer;">consulter votre page</div></li>
