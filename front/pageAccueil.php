@@ -7,13 +7,13 @@
         </div>
 
         <ul class="list-group-flush">
-            <li class="list-group-item"><div class="event" id="creationDeCompte" style="cursor:pointer;">creer un compte</div></li>
-            <li class="list-group-item"><div class="event" id="connexion" style="cursor:pointer;">se connecter</div></li>
-            <li class="list-group-item"><div class="event" id="utilisateur" style="cursor:pointer;">consulter votre page</div></li>
-            <li class="list-group-item"><div class="event" id="vente" style="cursor:pointer;">vendre</div></li>
-            <li class="list-group-item"><div class="event" id="produits" style="cursor:pointer;">consulter les articles</div></li>
-            <li class="list-group-item"><div class="event" id="utilisateurs" style="cursor:pointer;">consulter la liste des utilisateurs</div></li>
-            <li class="list-group-item"><div class="event" id="administrateur" style="cursor:pointer;">ajouter un nouvel administrateur</div></li>
+            <li><div class="event" id="creationDeCompte" style="cursor:pointer;">creer un compte</div></li>
+            <li><div class="event" id="connexion" style="cursor:pointer;">se connecter</div></li>
+            <li><div class="event" id="utilisateur" style="cursor:pointer;">consulter votre page</div></li>
+            <li><div class="event" id="vente" style="cursor:pointer;">vendre</div></li>
+            <li><div class="event" id="produits" style="cursor:pointer;">consulter les articles</div></li>
+            <li><div class="event" id="utilisateurs" style="cursor:pointer;">consulter la liste des utilisateurs</div></li>
+            <li><div class="event" id="administrateur" style="cursor:pointer;">ajouter un nouvel administrateur</div></li>
         </ul>
         <script>
             var role = sessionStorage.getItem('Role');
