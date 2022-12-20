@@ -13,7 +13,7 @@
     }
     </script>
 
-    <input type="hidden" id="image" class="simple-file-upload" required>
+    
 
     <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <label for="type">type:</label>
@@ -30,10 +30,8 @@
         <input type="hidden" name="seller" value="<?php echo $userID ?>">
         <label for="Label">Label:</label>
         <input type="text" name="Label" required>
-        <label for="picture">image du produit :</label>
-
+        <input type="hidden" id="image" class="simple-file-upload" required>
         <input type="hidden" name="image" id="picture" required>
-
         <label for="description">description :</label>
         <textarea name="description" id="" cols="30" rows="10" minlength="20" maxlength="30" required >description</textarea>
         <label for="price">prix:</label>
