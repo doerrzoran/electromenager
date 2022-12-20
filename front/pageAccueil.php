@@ -5,7 +5,7 @@
             require_once "welcomeUser.php";
             welcomeUser($userName, $userFirstname); ?>
         </div>
-        <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px;">creer un compte</div>
+        <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">creer un compte</div>
         <div class="event" id="connexion" style="cursor:pointer; font-size: 20px;">se connecter</div>
         <div class="event" id="utilisateur" style="cursor:pointer; font-size: 20px;">consulter votre page</div>
         <div class="event" id="vente" style="cursor:pointer; font-size: 20px;">vendre</div>
