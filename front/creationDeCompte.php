@@ -9,7 +9,7 @@
         <?php 
         require_once "header.html"; 
         ?>
-        <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data">
+        <form class="text-primary" action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data" style="font-size: 20px;">
             <div class="form-group">
                 <label for="nom" >nom:</label>
                 <input type="text" name="nom" required>
