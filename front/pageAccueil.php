@@ -5,8 +5,8 @@
 ?>
 
         <div class="text-primary">
-            <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px; padding-bottom: 10px; text-align: left">creer un compte</div>
-            <div class="event" id="connexion" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">se connecter</div>
+            <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px; padding-bottom: 10px; text-align: left;">creer un compte</div>
+            <div class="event" id="connexion" style="cursor:pointer; font-size: 20px; padding-bottom: 10px; text-align: left;">se connecter</div>
             <div class="event" id="utilisateur" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter votre page</div>
             <div class="event" id="vente" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">vendre</div>
             <div class="event" id="produits" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter les articles</div>
