@@ -13,16 +13,24 @@
             <div class="form-group">
                 <label for="nom" >nom:</label>
                 <input type="text" name="nom" required>
+            </div>
+            <div class="form-group">
                 <label for="prenom">prenom:</label>
                 <input type="text" name="prenom" required>
+            </div>
+            <div class="form-group">
                 <label for="mail">addresse mail</label>
                 <input type="email" name="mail" pattern="+@g+.com" required>
+            </div>
+            <div class="form-group">
                 <label for="Password">mot de passe</label>
                 <input type="password" name="password" minlength="5" maxlength="10" required >
+            </div>
+            <div class="form-group">
                 <label for="password2">confirmer le mot de pase</label>
                 <input type="password" name="password2" minlength="5" maxlength="10" required>
-                <input type="submit"> </input>
             </div>
+                <input type="submit"> </input>
         </form>
     </body>
     <?php
