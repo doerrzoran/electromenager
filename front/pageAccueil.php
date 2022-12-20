@@ -5,16 +5,13 @@
             require_once "welcomeUser.php";
             welcomeUser($userName, $userFirstname); ?>
         </div>
-
-        <ul>
-            <li><div class="event" id="creationDeCompte" style="cursor:pointer;">creer un compte</div></li>
-            <li><div class="event" id="connexion" style="cursor:pointer;">se connecter</div></li>
-            <li><div class="event" id="utilisateur" style="cursor:pointer;">consulter votre page</div></li>
-            <li><div class="event" id="vente" style="cursor:pointer;">vendre</div></li>
-            <li><div class="event" id="produits" style="cursor:pointer;">consulter les articles</div></li>
-            <li><div class="event" id="utilisateurs" style="cursor:pointer;">consulter la liste des utilisateurs</div></li>
-            <li><div class="event" id="administrateur" style="cursor:pointer;">ajouter un nouvel administrateur</div></li>
-        </ul>
+        <div class="event" id="creationDeCompte" style="cursor:pointer;">creer un compte</div>
+        <div class="event" id="connexion" style="cursor:pointer;">se connecter</div>
+        <div class="event" id="utilisateur" style="cursor:pointer;">consulter votre page</div>
+        <div class="event" id="vente" style="cursor:pointer;">vendre</div>
+        <div class="event" id="produits" style="cursor:pointer;">consulter les articles</div>
+        <div class="event" id="utilisateurs" style="cursor:pointer;">consulter la liste des utilisateurs</div>
+        <div class="event" id="administrateur" style="cursor:pointer;">ajouter un nouvel administrateur</div>
         <script>
             var role = sessionStorage.getItem('Role');
             if(role > 0){
