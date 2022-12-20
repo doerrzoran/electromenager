@@ -7,7 +7,7 @@
         </script>
     <body>
         <?php 
-        require_once "header.html"; 
+        require_once "header.php"; 
         ?>
         <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data" style="font-size: 20px;">
             <div class="form-group">

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html> 
     <head>
@@ -9,6 +10,10 @@
         <header class="p-3 mb-2 bg-info text-white">
            <div class="text-danger">
              <h1 class="event" id="title" style="cursor:pointer; font-size: 45px;">Electromenager</h1>
+             <?php
+             require_once "welcomeUser.php";
+             welcomeUser($userName, $userFirstname); 
+             ?>
            </div>
         </header>
        </div>

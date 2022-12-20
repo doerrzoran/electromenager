@@ -1,6 +1,6 @@
 <html>
     <?php 
-    require_once "header.html"; 
+    require_once "header.php"; 
     ?>
     <script>var data = sessionStorage.getItem('Alert');
     if(data != null){
@@ -9,7 +9,7 @@
     }
     </script>
     <body>
-        <div><?php require_once "header.html"; ?></div>
+        <div><?php require_once "header.php"; ?></div>
         <form id="contactForm" action="../back/scriptConnexion.php" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label for="mail">adresse email</label>

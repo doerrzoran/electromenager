@@ -7,7 +7,7 @@
         </script>
     <body>
         <?php 
-        require_once "header.html"; 
+        require_once "header.php"; 
         ?>
         <form action="../back/scriptAdmin.php" method="POST" enctype="multipart/form-data">
             <label for="nom" >nom:</label>

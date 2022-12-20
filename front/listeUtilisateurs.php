@@ -17,7 +17,7 @@
       };
     }
     </script>
-    <?php require_once "header.html";
+    <?php require_once "header.php";
     require_once "welcomeUser.php";
     ?>
     <?php welcomeUser($userName, $userFirstname);  
