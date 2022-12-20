@@ -8,8 +8,7 @@ function welcomeUser($userName, $userFirstname){
      echo '';
      ?><script>sessionStorage.removeItem('Role');</script><?php
   }else{
-     echo "<h3>connecté en temps que ".$userName." ".$userFirstname."</h3>";
-     echo "<p id='deconnexion'>se deconnecter</p>";
+     echo "<div style = 'padding-bottom: 20px;'><h3>connecté en temps que ".$userName." ".$userFirstname."</h3><p id='deconnexion'>se deconnecter</p></div>";
      ?>
          <script>
             var disconnect = document.getElementById('deconnexion').onclick = function(){
@@ -23,3 +22,4 @@ function welcomeUser($userName, $userFirstname){
 ?>
 
 <script src ="../Javascript/redirect.js"></script>
+
