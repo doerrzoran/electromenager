@@ -35,7 +35,7 @@
           <input type="text" name="Label" required>
         </div>
         <div> 
-          <label for="description">description :</label>
+          <label for="description"></label>
           <textarea name="description" id="" cols="50" rows="3" minlength="20" maxlength="30" required >description</textarea>
         </div>
         <div>
