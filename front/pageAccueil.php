@@ -5,13 +5,16 @@
             require_once "welcomeUser.php";
             welcomeUser($userName, $userFirstname); ?>
         </div>
-        <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">creer un compte</div>
-        <div class="event" id="connexion" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">se connecter</div>
-        <div class="event" id="utilisateur" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter votre page</div>
-        <div class="event" id="vente" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">vendre</div>
-        <div class="event" id="produits" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter les articles</div>
-        <div class="event" id="utilisateurs" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter la liste des utilisateurs</div>
-        <div class="event" id="administrateur" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">ajouter un nouvel administrateur</div>
+        <div class="text-primary">
+            <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">creer un compte</div>
+            <div class="event" id="connexion" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">se connecter</div>
+            <div class="event" id="utilisateur" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter votre page</div>
+            <div class="event" id="vente" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">vendre</div>
+            <div class="event" id="produits" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter les articles</div>
+            <div class="event" id="utilisateurs" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter la liste des utilisateurs</div>
+            <div class="event" id="administrateur" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">ajouter un nouvel administrateur</div>
+        </div>
+        
         <script>
             var role = sessionStorage.getItem('Role');
             if(role > 0){
