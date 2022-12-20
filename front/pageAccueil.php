@@ -6,12 +6,12 @@
             welcomeUser($userName, $userFirstname); ?>
         </div>
         <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 20px;">creer un compte</div>
-        <div class="event" id="connexion" style="cursor:pointer;">se connecter</div>
-        <div class="event" id="utilisateur" style="cursor:pointer;">consulter votre page</div>
-        <div class="event" id="vente" style="cursor:pointer;">vendre</div>
-        <div class="event" id="produits" style="cursor:pointer;">consulter les articles</div>
-        <div class="event" id="utilisateurs" style="cursor:pointer;">consulter la liste des utilisateurs</div>
-        <div class="event" id="administrateur" style="cursor:pointer;">ajouter un nouvel administrateur</div>
+        <div class="event" id="connexion" style="cursor:pointer; font-size: 20px;">se connecter</div>
+        <div class="event" id="utilisateur" style="cursor:pointer; font-size: 20px;">consulter votre page</div>
+        <div class="event" id="vente" style="cursor:pointer; font-size: 20px;">vendre</div>
+        <div class="event" id="produits" style="cursor:pointer; font-size: 20px;">consulter les articles</div>
+        <div class="event" id="utilisateurs" style="cursor:pointer; font-size: 20px;">consulter la liste des utilisateurs</div>
+        <div class="event" id="administrateur" style="cursor:pointer; font-size: 20px;">ajouter un nouvel administrateur</div>
         <script>
             var role = sessionStorage.getItem('Role');
             if(role > 0){
