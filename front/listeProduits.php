@@ -33,10 +33,10 @@ if($userID){
         if(user == arr['seller']){
           document.write('votre article ');
           document.write(form);
+          document.write(purchase);
         }else{
           
         }
-        document.write(purchase);
       }
     }
     </script>
