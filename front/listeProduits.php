@@ -33,7 +33,7 @@ if($userID){
           document.write(form);
           document.write(purchase);
         }else{
-          
+          document.write('Veuillez vous connecter pour effectuer un achat');
         }
       }
     }
