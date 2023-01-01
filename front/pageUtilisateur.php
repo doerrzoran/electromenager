@@ -6,8 +6,8 @@ require_once "welcomeUser.php";
 
 <html>
   <body>
-    <div class="event" id ="cart">consulter votre panier</div>
-    <div class="event" id ="purchase">consulter vos achats</div>
+    <div class="event" id ="cart" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter votre panier</div>
+    <div class="event" id ="purchase" style="cursor:pointer; font-size: 20px; padding-bottom: 10px;">consulter vos achats</div>
     <script>
      var data = sessionStorage.getItem('Cle');
      var newArr = JSON.parse(data);
