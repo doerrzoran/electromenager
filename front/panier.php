@@ -12,7 +12,7 @@ require_once "header.php";
         var arr = newArr[i];
         var image = arr[4];
         var picture = '<img src="'+ image +'"width="500" length="500">';
-        document.write(arr[3] + ' ' + arr[5] + ' ' + arr[6] + '€ ' + ' ' + picture + '<br>');
+        document.write('<div style="padding-top: 50px;"><table><tr><th>' + arr[3] + ' ' +'</th></tr><tr><td>' + picture + '</td>' + '<td><p>' + '</p>' + '<p>' + arr[5] + ' ' + '</p>' + '<p>' + arr[6] + '€ ' + '</p></td></tr></table></div>');
         var form = '<form action="../back/deleteCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr[0] + '"><button type ="submit">retirer ce produit de votre panier</button></form>';
         var buy = '<form action="../back/scriptPurchase.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr[0] + '"><button type ="submit">acheter</button></form>';
         document.write(form);
