@@ -4,8 +4,6 @@
 </head>
  <body>
  <div><?php require_once "header.php"; ?></div>
- <?php require_once "welcomeUser.php"; 
-     welcomeUser($userName, $userFirstname); ?>
     <script>var data = sessionStorage.getItem('Alert');
     if(data != null){
         alert(data);
