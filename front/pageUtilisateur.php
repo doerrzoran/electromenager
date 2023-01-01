@@ -15,7 +15,7 @@ require_once "welcomeUser.php";
       for(let i = 0; i < newArr.length; i++){
         var arr = newArr[i];
         var image = arr['picture'];
-        var picture = '<img src="'+ image +'"width="500" length="500">';
+        var picture = '<img style="vertical-align: top;" class="text-justify figure-img  img-fluid img-thumbnail" alt="Responsive image" src="'+ image +'"width="300" length="300" style="display: inline-block">';
         document.write('<table><tr><th>' + arr['label'] + ' ' +'</th></tr><tr><td>' + picture + '</td>' + '<td><p>' + '</p>' + '<p>' + arr['description'] + ' ' + '</p>' + '<p>' + arr['price'] + '€ ' + '</p></td></tr></table>');
         var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">suppprimer ce produit</button></form>';
         document.write(form);
