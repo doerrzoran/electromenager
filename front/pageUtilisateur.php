@@ -23,7 +23,7 @@ require_once "welcomeUser.php";
     }
     </script>
     <?php  
-    $variable = "<script>tab(newArr);</script>";
+    $variable = "<script style='padding-top: 50px' >tab(newArr);</script>";
     echo $variable;
     ?>
   </body>
