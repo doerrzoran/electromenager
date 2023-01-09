@@ -29,7 +29,8 @@
                 document.getElementById("administrateur").style.display = "none";
                 document.getElementById("utilisateur").style.display = "none";
                 document.getElementById("vente").style.display = "none";
-            }else{
+            }
+            if(role == 1){
                 document.getElementById("vente").style.display = "none";
                 document.getElementById("utilisateur").style.display = "none";
             }
