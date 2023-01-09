@@ -31,7 +31,7 @@ if($userID){
         if(user == 0){
           document.write('Veuillez vous connecter pour effectuer un achat');
         }
-        if(user > 0 && user !== arr['seller']){
+        if(user > 0 && user != arr['seller']){
           document.write(purchase);
         }
         if(user == arr['seller']){
