@@ -24,16 +24,10 @@ $password = $infoConnexion['password'];
   <?php
   $mail = $_COOKIE['mail'];
   echo $mail;
-  if (isset($_COOKIE['mail'])) {
-      unset($_COOKIE['mail']); 
-      setcookie('mail', "", time() - 3600); 
-    };
+  setcookie('mail', null, -1, '/');
   $password = $_COOKIE['password'];
   echo $password;
-  if (isset($_COOKIE['password'])) {
-    unset($_COOKIE['password']); 
-    setcookie('password', "", time() - 3600); 
-  };
+  setcookie('password', null, -1, '/');
 }
 
 
