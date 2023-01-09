@@ -16,18 +16,16 @@ $password = $infoConnexion['password'];
     console.log(mail);
     var password = sessionStorage.getItem('password');
     console.log(password);
-    document.cookie = 'mail = ' + mail;
-    document.cookie = 'password = ' + password;
+    document.cookie = 'mail = ' + mail '; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+    document.cookie = 'password = ' + password '; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
     sessionStorage.removeItem('mail');
     sessionStorage.removeItem('password');
   </script>
   <?php
   $mail = $_COOKIE['mail'];
   echo $mail;
-  setcookie($_COOKIE['mail'], null, -1, '/');
   $password = $_COOKIE['password'];
   echo $password;
-  setcookie($_COOKIE['password'], null, -1, '/');
 }
 
 
