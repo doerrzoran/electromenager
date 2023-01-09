@@ -23,9 +23,15 @@ $password = $infoConnexion['password'];
   </script>
   <?php
   $mail = $_COOKIE['mail'];
-  unset($_COOKIE['mail']);
+  if (isset($_COOKIE['mail'])) {
+      unset($_COOKIE['mail']); 
+      setcookie('mail', null, -1, '/'); 
+    };
   $password = $_COOKIE['password'];
-  unset($_COOKIE['password']);
+  if (isset($_COOKIE['password'])) {
+    unset($_COOKIE['password']); 
+    setcookie('password', null, -1, '/'); 
+  };
 }
 
 
