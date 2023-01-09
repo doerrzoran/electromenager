@@ -29,7 +29,7 @@ $password = $infoConnexion['password'];
       setcookie('mail', null, -1, '/'); 
     };
   $password = $_COOKIE['password'];
-  echo $password
+  echo $password;
   if (isset($_COOKIE['password'])) {
     unset($_COOKIE['password']); 
     setcookie('password', null, -1, '/'); 
