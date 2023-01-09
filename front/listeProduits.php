@@ -28,9 +28,10 @@ if($userID){
         var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">suppprimer ce produit</button></form>';
         document.write('<div style="padding-top: 50px;"><table><tr><th>' + arr['label'] + ' ' +'</th></tr><tr><td>' + picture + '</td>' + '<td><p>' + '</p>' + '<p>' + arr['description'] + ' ' + '</p>' + '<p>' + arr['price'] + '€ ' + '</p></td></tr></table></div>');
         var purchase = '<form action="../back/scriptCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">ajouter ce produit à votre panier</button></form>';
-        if(typeof user === 'undefined'){
+        if(typeof user == 'undefined'){
           document.write('Veuillez vous connecter pour effectuer un achat');
-        }else{
+        }
+        if(typeof user !== 'undefined'){
           document.write(purchase);
         }
         if(user == arr['seller']){
