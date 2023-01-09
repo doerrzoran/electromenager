@@ -16,8 +16,8 @@ $password = $infoConnexion['password'];
     console.log(mail);
     var password = sessionStorage.getItem('password');
     console.log(password);
-    document.cookie = 'mail = ' + mail '; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-    document.cookie = 'password = ' + password '; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+    document.cookie = 'mail = ' + mail;
+    document.cookie = 'password = ' + password;
     sessionStorage.removeItem('mail');
     sessionStorage.removeItem('password');
   </script>
@@ -26,6 +26,15 @@ $password = $infoConnexion['password'];
   echo $mail;
   $password = $_COOKIE['password'];
   echo $password;
+  if (isset($_SERVER['HTTP_COOKIE'])) {
+    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+    foreach($cookies as $cookie) {
+        $parts = explode('=', $cookie);
+        $name = trim($parts[0]);
+        setcookie($name, '', time()-1000);
+        setcookie($name, '', time()-1000, '/');
+    }
+}
 }
 
 
