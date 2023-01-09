@@ -17,7 +17,7 @@ if(isset($_POST)){
       $acount = insertIntoDatabase('User_acount', 'name, firstname, mail, password, role', "'$name', '$firstName', '$mail', '$password', 2", $conn);
       setcookie('mail', $mail);
       setcookie('password', $password);
-      location
+      header('Location: scriptConnexion.php');
     }else{
     ?>
     <script>var message ='un compte existe deja pour cet adresse mail !';</script>
