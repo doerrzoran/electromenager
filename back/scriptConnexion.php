@@ -21,31 +21,12 @@ $password = $infoConnexion['password'];
     sessionStorage.removeItem('mail');
     sessionStorage.removeItem('password');
   </script>
-  <?php
-  if (isset($_SERVER['HTTP_COOKIE'])) {
-    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
-    foreach($cookies as $cookie) {
-        $parts = explode('=', $cookie);
-        $name = trim($parts[0]);
-        setcookie($name, '', time()-1000);
-        setcookie($name, '', time()-1000, '/');
-    }
-}
-
-  $mail = $_COOKIE['mail'];
-  echo $mail;
-  $password = $_COOKIE['password'];
-  echo $password;
   
-  if (isset($_SERVER['HTTP_COOKIE'])) {
-    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
-    foreach($cookies as $cookie) {
-        $parts = explode('=', $cookie);
-        $name = trim($parts[0]);
-        setcookie($name, '', time()-1000);
-        setcookie($name, '', time()-1000, '/');
-    }
-}
+  <?php
+  $mail = '<script>document.write(mail)</script>';
+  echo $mail;
+  $password = '<script>document.write(password)</script>';
+  echo $password;
 }
 
 
