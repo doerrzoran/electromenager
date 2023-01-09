@@ -30,7 +30,8 @@ if($userID){
         var purchase = '<form action="../back/scriptCart.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">ajouter ce produit à votre panier</button></form>';
         if(user){
           document.write(purchase);
-        }else{
+        }
+        if(!user){
           document.write('Veuillez vous connecter pour effectuer un achat');
         }
         if(user == arr['seller']){
