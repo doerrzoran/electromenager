@@ -29,7 +29,7 @@ $password = $infoConnexion['password'];
       setcookie('mail', null, -1, '/'); 
     };
   $password = $_COOKIE['password'];
-  echo $password;
+  echo $password
   if (isset($_COOKIE['password'])) {
     unset($_COOKIE['password']); 
     setcookie('password', null, -1, '/'); 
@@ -37,5 +37,17 @@ $password = $infoConnexion['password'];
 }
 
 
+$userMail = selectFromDatabase("User_acount", "mail", $mail, $conn);
+$userMPassword = selectFromDatabase("User_acount", "password", $password, $conn);
 
+
+if($userMail == false || $userMPassword == false){
+  ?>
+  <script>var message ='identifiants invalides';</script>
+  <script src='../Javascript/redirectConnexion.js' ></script>
+  <script>window.location.href = "../front/connexion.php";</script>
+   <?php
+}else{
+  require 'userData.php';
+}
  
