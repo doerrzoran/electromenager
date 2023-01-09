@@ -21,7 +21,7 @@
               document.getElementById("creationDeCompte").style.display = "none";
               document.getElementById("connexion").style.display = "none";
             }
-            if(role == 0){
+            if(role == 1){
                 document.getElementById("vente").style.display = "none";
                 document.getElementById("utilisateur").style.display = "none";
             }
