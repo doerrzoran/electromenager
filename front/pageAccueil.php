@@ -28,6 +28,10 @@
                 document.getElementById("utilisateurs").style.display = "none";
                 document.getElementById("administrateur").style.display = "none";
             }
+            if(role == 1){
+                document.getElementById("vente").style.display = "initial";
+                document.getElementById("utilisateur").style.display = "initial";
+            }
         </script>
         <script src ="../Javascript/redirect.js"></script>
     </body>
