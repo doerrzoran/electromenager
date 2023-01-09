@@ -24,10 +24,10 @@ $password = $infoConnexion['password'];
   <?php
   $mail = $_COOKIE['mail'];
   echo $mail;
-  setcookie('mail', null, -1, '/');
+  setcookie($_COOKIE['mail'], null, -1, '/');
   $password = $_COOKIE['password'];
   echo $password;
-  setcookie('password', null, -1, '/');
+  setcookie($_COOKIE['password'], null, -1, '/');
 }
 
 
