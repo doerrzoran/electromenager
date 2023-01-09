@@ -32,12 +32,11 @@ if($userID){
         if(typeof obj.user == 'undefined'){
           document.write('Veuillez vous connecter pour effectuer un achat');
         }
-        if(typeof obj.user !== 'undefined'){
-          document.write(purchase);
-        }
         if(user == arr['seller']){
           document.write('votre article ');
           document.write(form);
+        }else{
+          document.write(purchase);
         }
       }
     }
