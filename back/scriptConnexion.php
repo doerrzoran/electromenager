@@ -22,10 +22,6 @@ $password = $infoConnexion['password'];
     sessionStorage.removeItem('password');
   </script>
   <?php
-  $mail = $_COOKIE['mail'];
-  echo $mail;
-  $password = $_COOKIE['password'];
-  echo $password;
   if (isset($_SERVER['HTTP_COOKIE'])) {
     $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
     foreach($cookies as $cookie) {
@@ -35,6 +31,12 @@ $password = $infoConnexion['password'];
         setcookie($name, '', time()-1000, '/');
     }
 }
+
+  $mail = $_COOKIE['mail'];
+  echo $mail;
+  $password = $_COOKIE['password'];
+  echo $password;
+  
 }
 
 
