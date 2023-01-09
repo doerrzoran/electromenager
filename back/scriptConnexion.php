@@ -26,13 +26,13 @@ $password = $infoConnexion['password'];
   echo $mail;
   if (isset($_COOKIE['mail'])) {
       unset($_COOKIE['mail']); 
-      setcookie('mail', null, -1, '/'); 
+      setcookie('mail', "", time() - 3600); 
     };
   $password = $_COOKIE['password'];
   echo $password;
   if (isset($_COOKIE['password'])) {
     unset($_COOKIE['password']); 
-    setcookie('password', null, -1, '/'); 
+    setcookie('password', "", time() - 3600); 
   };
 }
 
