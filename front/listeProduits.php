@@ -18,6 +18,7 @@ if($userID){
 <html>
   <body>
     <script>
+    console.log(user);
     var data = sessionStorage.getItem('Cle');
     var newArr = JSON.parse(data);
     function tab(newArr){
