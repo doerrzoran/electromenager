@@ -20,10 +20,13 @@ require_once "header.php";
       };
     }
     </script>
+    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 1700px; font-size: 30px;">
     <?php  
     $variable = "<script>tab(newArr);</script>";
     echo $variable;
     ?> 
+    </div>
+    
   </body>
   <?php
     require_once "footer.html"; 
