@@ -19,7 +19,7 @@ require_once "welcomeUser.php";
     }
     </script>
 
-<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 70%; font-size: 30px;">
+<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 70%; font-size: 20px;">
     <div class="event" id ="cart" style="cursor:pointer; padding-bottom: 10px;">consulter votre panier</div>
 
     <?php  

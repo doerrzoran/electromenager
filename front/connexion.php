@@ -11,7 +11,7 @@
     <body>
         <div><?php require_once "header.php"; ?></div>
 
-        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 80%; font-size: 30px;">
+        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 70%; font-size: 20px;">
           <form id="contactForm" action="../back/scriptConnexion.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
               <label for="mail">adresse email</label>
