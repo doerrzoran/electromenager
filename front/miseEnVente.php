@@ -11,7 +11,7 @@
     }
     </script>
 
-<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 65%; font-size: 20px; min-width: 300px">
+<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 65%; font-size: 20px; min-width: 300px;">
  <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="seller" value="<?php echo $userID ?>">
         <div>

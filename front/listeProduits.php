@@ -39,7 +39,7 @@ if($userID){
       }
     }
     </script>
-    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 75%; font-size: 20px; min-width: 300px">
+    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 75%; font-size: 20px; min-width: 300px;">
       <?php  
       $variable = "<script>tab(newArr);</script>";
       echo $variable ;
