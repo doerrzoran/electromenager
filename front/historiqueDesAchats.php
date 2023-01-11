@@ -15,7 +15,7 @@ require_once "header.php";
       };
     }
     </script>
-    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 75%; font-size: 20px;">
+    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 75%; font-size: 20px;min-width: 200px">
      <?php  
      $variable = "<script>tab(newArr);</script>";
      echo $variable;

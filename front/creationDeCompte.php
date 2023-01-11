@@ -9,7 +9,7 @@
         <?php 
         require_once "header.php"; 
         ?>
-        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 65%; font-size: 20px;">
+        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 65%; font-size: 20px; min-width: 250px">
         <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data" style="font-size: 20px;">
             <div class="form-group">
                 <label for="nom" >nom:</label>

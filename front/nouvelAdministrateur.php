@@ -9,7 +9,7 @@
         <?php 
         require_once "header.php"; 
         ?>
-        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 70%; font-size: 20px;">
+        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 70%; font-size: 20px; min-width: 300px">
         <form action="../back/scriptAdmin.php" method="POST" enctype="multipart/form-data">
             <label for="nom" >nom:</label>
             <input type="text" name="nom" required>
