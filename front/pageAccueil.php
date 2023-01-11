@@ -15,8 +15,8 @@
         <script>
             var role = sessionStorage.getItem('Role');
             if(role > 0){
-              document.getElementById("creationDeCompte").style.display = "none";
-              document.getElementById("connexion").style.display = "none";
+            //   document.getElementById("creationDeCompte").style.display = "none";
+            //   document.getElementById("connexion").style.display = "none";
             }else{
                 document.getElementById("vente").style.display = "none";
                 document.getElementById("utilisateur").style.display = "none";
