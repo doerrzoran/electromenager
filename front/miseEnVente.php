@@ -11,9 +11,8 @@
     }
     </script>
 
-    
-
-    <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
+<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 1500px; font-size: 30px;">
+ <form action="../back/scriptProduct.php" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="seller" value="<?php echo $userID ?>">
         <div>
           <label for="type">type:</label>
@@ -40,16 +39,13 @@
           <label for="price">prix:</label>
           <input type="number" name="price" required>  
         </div>
-        
-        
-        
-        
         <input type="hidden" id="image" class="simple-file-upload" required>
         <input type="hidden" name="image" id="picture" required>
-       
-        
         <button type="submit">enregistrer</button>
     </form>
+</div>
+    
+   
  </body>
  <?php
       require_once "footer.html"; 
