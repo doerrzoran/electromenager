@@ -9,6 +9,7 @@
         <?php 
         require_once "header.php"; 
         ?>
+        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 1500px; font-size: 30px;">
         <form action="../back/scriptCreationDeCompte.php" method="POST" enctype="multipart/form-data" style="font-size: 20px;">
             <div class="form-group">
                 <label for="nom" >nom:</label>
@@ -32,7 +33,7 @@
             </div>
                 <input type="submit"> </input>
         </form>
-    </body>
+        </div>
     <?php
     require_once "footer.html"; 
     ?>
