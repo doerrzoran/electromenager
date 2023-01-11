@@ -9,6 +9,7 @@
         <?php 
         require_once "header.php"; 
         ?>
+        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 500px; font-size: 30px;">
         <form action="../back/scriptAdmin.php" method="POST" enctype="multipart/form-data">
             <label for="nom" >nom:</label>
             <input type="text" name="nom" required>
@@ -22,6 +23,8 @@
             <input type="password" name="password2" minlength="5" maxlength="10" required>
             <input type="submit"> </input>
         </form>
+       </div>
+        
     </body>
     <?php
         require_once "footer.html"; 
