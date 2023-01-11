@@ -17,10 +17,10 @@
           require_once "welcomeUser.php";
           welcomeUser($userName, $userFirstname); 
           ?>
-          <div class="text-danger" style="text-align: right; background-color: #FFFACD; border-radius: 15px; margin-left: 1600px;">
+        </div>
+        <div class="text-danger" style="text-align: right; background-color: #FFFACD; border-radius: 15px; margin-left: 1600px;">
           <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">creer un compte</div>
           <div class="event" id="connexion" style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">se connecter</div>
-        </div>
         </div>
        </div>
         
