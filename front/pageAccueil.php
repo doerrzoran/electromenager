@@ -3,11 +3,11 @@
 <?php
     require_once "header.php";
 ?>
-        <div class="text-danger" style="text-align: right; background-color: #FFFACD; border-radius: 15px; margin-left: 75%;">
+        <div class="text-danger" style="text-align: right; background-color: #FFFACD; border-radius: 15px; margin-left: 80%;">
           <div class="event" id="creationDeCompte" style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">creer un compte</div>
           <div class="event" id="connexion" style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">se connecter</div>
         </div>
-        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 1300px;">
+        <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 75%;">
           <div class="event" id="utilisateur"  style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">consulter votre page</div>
           <div class="event" id="vente" style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">vendre</div>
           <div class="event" id="produits" style="cursor:pointer; font-size: 30px; padding-bottom: 10px;">consulter les articles</div>

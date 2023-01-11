@@ -2,8 +2,7 @@
 require_once "header.php"; 
 require_once "welcomeUser.php";
 ?>
-<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 700px; font-size: 30px;">
-    <div class="event" id ="cart" style="cursor:pointer; padding-bottom: 10px;">consulter votre panier</div>
+
     
     <script>
      var data = sessionStorage.getItem('Cle');
@@ -19,6 +18,10 @@ require_once "welcomeUser.php";
       };
     }
     </script>
+
+<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 70%; font-size: 30px;">
+    <div class="event" id ="cart" style="cursor:pointer; padding-bottom: 10px;">consulter votre panier</div>
+
     <?php  
     $variable = "<script style='padding-top: 50px' >tab(newArr);</script>";
     echo $variable;

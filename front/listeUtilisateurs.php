@@ -20,7 +20,7 @@
     <?php require_once "header.php";
     require_once "welcomeUser.php";
     ?>
-    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 500px; font-size: 30px;">
+    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 70%; margin-right: 500px; font-size: 30px;">
       <?php welcomeUser($userName, $userFirstname);  
       $variable = "<script>tab(newArr);</script>";
       echo $variable;
