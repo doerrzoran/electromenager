@@ -2,7 +2,6 @@
 
 session_start();
 
-
 if(isset($_SESSION['id'])){
     $userID = $_SESSION['id'];
     $userName = $_SESSION['name'];
@@ -18,7 +17,7 @@ if(isset($_SESSION['id'])){
     </script>
 
     <?php
-    
+   
 }
 
 
