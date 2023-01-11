@@ -11,7 +11,7 @@
              <h1 class="event" id="title" style="cursor:pointer; font-size: 45px;">Electromenager</h1>
            </div>
         </header>
-        <div class="text-danger" style = "text-align: right; font-size: 30px; background-color: #FFFACD; border-radius: 15px; margin-left: 40%;">
+        <div class="text-danger" style = "text-align: right; font-size: 30px; background-color: #FFFACD; border-radius: 15px; margin-left: 100%;">
         <?php
           require_once "welcomeUser.php";
           welcomeUser($userName, $userFirstname); 
