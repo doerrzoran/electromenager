@@ -14,7 +14,7 @@ require_once "welcomeUser.php";
         var image = arr['picture'];
         var picture = '<img style="vertical-align: top;" class="text-justify figure-img  img-fluid img-thumbnail" alt="Responsive image" src="'+ image +'"width="300" length="300" style="display: inline-block">';
         document.write('<div style="padding-top: 50px;"><table><tr><th>' + arr['label'] + ' ' +'</th></tr><tr><td>' + picture + '</td>' + '<td><p>' + '</p>' + '<p>' + arr['description'] + ' ' + '</p>' + '<p>' + arr['price'] + '€ ' + '</p></td></tr></table></div>');
-        var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">suppprimer ce produit</button></form>';
+        var form = '<form action="../back/deleteProduct.php" method="POST" enctype="multipart/form-data"><input id="id" type="hidden" name="product" value="' + arr['id'] + '"><button type ="submit">retirer ce produit</button></form>';
         document.write(form);
       };
     }
@@ -23,7 +23,7 @@ require_once "welcomeUser.php";
     $variable = "<script style='padding-top: 50px' >tab(newArr);</script>";
     echo $variable;
     ?>
-  <div class="event" id ="purchase" style="cursor:pointer; padding-top: 30px;">consulter vos achats</div>
+  <div class="event" id ="purchase" style="cursor:pointer; padding-top: 50px;">consulter vos achats</div>
 </div>
   <?php
     require_once "footer.html"; 
