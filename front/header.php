@@ -18,7 +18,7 @@
           welcomeUser($userName, $userFirstname); 
           ?>
         </div>
-        <p style="background-image: url('https://cdn-g8hn2yqg.files-simplefileupload.com/static/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNU4yQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e6e3a5c0ef3b85e0e51f6f9bdf082dbccad4f140/IMG_20230109_103505.jpg');"> 
+        <img src="https://cdn-g8hn2yqg.files-simplefileupload.com/static/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNU4yQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e6e3a5c0ef3b85e0e51f6f9bdf082dbccad4f140/IMG_20230109_103505.jpg" alt="">
        </div>
         
 
