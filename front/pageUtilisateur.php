@@ -2,7 +2,7 @@
 require_once "header.php"; 
 require_once "welcomeUser.php";
 ?>
-<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 500px; font-size: 30px;">
+<div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 700px; font-size: 30px;">
     <div class="event" id ="cart" style="cursor:pointer; padding-bottom: 10px;">consulter votre panier</div>
     
     <script>
@@ -23,7 +23,7 @@ require_once "welcomeUser.php";
     $variable = "<script style='padding-top: 50px' >tab(newArr);</script>";
     echo $variable;
     ?>
-  <div class="event" id ="purchase" style="cursor:pointer; padding-top: 10px;">consulter vos achats</div>
+  <div class="event" id ="purchase" style="cursor:pointer; padding-top: 30px;">consulter vos achats</div>
 </div>
   <?php
     require_once "footer.html"; 
