@@ -1,8 +1,5 @@
 <?php 
 require_once "header.php"; 
-require_once "welcomeUser.php";
-welcomeUser($userName, $userFirstname);
-
 ?>
 
 <html>
@@ -18,6 +15,7 @@ welcomeUser($userName, $userFirstname);
       };
     }
     </script>
+    <div class="text-primary" style="text-align: left; background-color: #FFFACD; border-radius: 15px; margin-right: 1500px; font-size: 30px;"></div>
     <?php  
     $variable = "<script>tab(newArr);</script>";
     echo $variable;
