@@ -12,14 +12,13 @@
              <h1 class="event" id="title" style="cursor:pointer; font-size: 45px;">Electromenager</h1>
            </div>
         </header>
+       </div>
         <div class="text-danger" style = "text-align: right; font-size: 30px; background-color: #FFFACD; border-radius: 15px; margin-left: 1300px;">
         <?php
           require_once "welcomeUser.php";
           welcomeUser($userName, $userFirstname); 
           ?>
         </div>
-       </div>
-        
 
     
 S
