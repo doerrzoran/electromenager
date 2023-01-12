@@ -7,9 +7,8 @@ $user = $userID;
 $product = $_POST['product'];
 
 //suppression panier
-$cart = selectFromDatabase("_cart", "client", $userID, $conn);
-$cartID = $cart[0];
-$deletionCart = deleteFromDatabase("_cart", "id", $cartID, $conn);
+$cart = deleteFromDatabase("_cart", "product", $product, $conn);
+
 
 //suppression produit
 $deletion = deleteFromDatabase("_product", "id", $product, $conn);
