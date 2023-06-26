@@ -1,4 +1,5 @@
 # electromenager
 
-ceci est ma troisieme application.
-il s'agit d'un site permetant la vent entre particuliers de produits electroménagers 
+Ceci est ma troisième application.
+Il s'agit d'un site permettant la vente entre particuliers de produits électroménagers
+
